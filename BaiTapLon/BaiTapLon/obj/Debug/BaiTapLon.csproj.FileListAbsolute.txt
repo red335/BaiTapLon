@@ -1,0 +1,13 @@
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\bin\Debug\BaiTapLon.exe.config
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\bin\Debug\BaiTapLon.exe
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\bin\Debug\BaiTapLon.pdb
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.csprojAssemblyReference.cache
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.Form1.resources
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.Properties.Resources.resources
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.csproj.GenerateResource.cache
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.exe
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.pdb
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.MuaBan.MuaBan_Form.resources
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.MuaBan.Header_Form.resources
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1.resources
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.MuaBan.Home.resources
