@@ -72,20 +72,20 @@
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(8, 0, 0, 0);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(116, 975);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(77, 634);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // pnCart
             // 
-            this.pnCart.BackColor = System.Drawing.Color.White;
+            this.pnCart.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.pnCart.Controls.Add(this.label4);
             this.pnCart.Controls.Add(this.pbCart);
-            this.pnCart.Location = new System.Drawing.Point(4, 5);
-            this.pnCart.Margin = new System.Windows.Forms.Padding(4, 5, 0, 0);
+            this.pnCart.Location = new System.Drawing.Point(3, 3);
+            this.pnCart.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.pnCart.Name = "pnCart";
-            this.pnCart.Size = new System.Drawing.Size(104, 108);
+            this.pnCart.Size = new System.Drawing.Size(69, 70);
             this.pnCart.TabIndex = 4;
             this.pnCart.Tag = "Cart";
             // 
@@ -93,20 +93,18 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(14, 85);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(9, 55);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 20);
+            this.label4.Size = new System.Drawing.Size(52, 13);
             this.label4.TabIndex = 1;
             this.label4.Text = "Giỏ Hàng";
             // 
             // pbCart
             // 
             this.pbCart.Image = ((System.Drawing.Image)(resources.GetObject("pbCart.Image")));
-            this.pbCart.Location = new System.Drawing.Point(15, 9);
-            this.pbCart.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbCart.Location = new System.Drawing.Point(10, 6);
             this.pbCart.Name = "pbCart";
-            this.pbCart.Size = new System.Drawing.Size(74, 69);
+            this.pbCart.Size = new System.Drawing.Size(49, 45);
             this.pbCart.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbCart.TabIndex = 0;
             this.pbCart.TabStop = false;
@@ -114,33 +112,31 @@
             // 
             // pnClassify
             // 
-            this.pnClassify.BackColor = System.Drawing.Color.White;
+            this.pnClassify.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.pnClassify.Controls.Add(this.label1);
             this.pnClassify.Controls.Add(this.pbClassify);
-            this.pnClassify.Location = new System.Drawing.Point(4, 118);
-            this.pnClassify.Margin = new System.Windows.Forms.Padding(4, 5, 0, 0);
+            this.pnClassify.Location = new System.Drawing.Point(3, 76);
+            this.pnClassify.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.pnClassify.Name = "pnClassify";
-            this.pnClassify.Size = new System.Drawing.Size(104, 108);
+            this.pnClassify.Size = new System.Drawing.Size(69, 70);
             this.pnClassify.TabIndex = 1;
             this.pnClassify.Tag = "Classify";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 85);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(8, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 20);
+            this.label1.Size = new System.Drawing.Size(51, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Phân loại";
             // 
             // pbClassify
             // 
             this.pbClassify.Image = ((System.Drawing.Image)(resources.GetObject("pbClassify.Image")));
-            this.pbClassify.Location = new System.Drawing.Point(15, 9);
-            this.pbClassify.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbClassify.Location = new System.Drawing.Point(10, 6);
             this.pbClassify.Name = "pbClassify";
-            this.pbClassify.Size = new System.Drawing.Size(74, 69);
+            this.pbClassify.Size = new System.Drawing.Size(49, 45);
             this.pbClassify.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbClassify.TabIndex = 0;
             this.pbClassify.TabStop = false;
@@ -148,13 +144,13 @@
             // 
             // pnMess
             // 
-            this.pnMess.BackColor = System.Drawing.Color.White;
+            this.pnMess.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.pnMess.Controls.Add(this.label3);
             this.pnMess.Controls.Add(this.pbMess);
-            this.pnMess.Location = new System.Drawing.Point(4, 231);
-            this.pnMess.Margin = new System.Windows.Forms.Padding(4, 5, 0, 0);
+            this.pnMess.Location = new System.Drawing.Point(3, 149);
+            this.pnMess.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.pnMess.Name = "pnMess";
-            this.pnMess.Size = new System.Drawing.Size(104, 108);
+            this.pnMess.Size = new System.Drawing.Size(69, 70);
             this.pnMess.TabIndex = 3;
             this.pnMess.Tag = "Mess";
             // 
@@ -162,20 +158,18 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(6, 85);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(4, 55);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 20);
+            this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "Thông Báo";
             // 
             // pbMess
             // 
             this.pbMess.Image = ((System.Drawing.Image)(resources.GetObject("pbMess.Image")));
-            this.pbMess.Location = new System.Drawing.Point(15, 9);
-            this.pbMess.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbMess.Location = new System.Drawing.Point(10, 6);
             this.pbMess.Name = "pbMess";
-            this.pbMess.Size = new System.Drawing.Size(74, 69);
+            this.pbMess.Size = new System.Drawing.Size(49, 45);
             this.pbMess.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbMess.TabIndex = 0;
             this.pbMess.TabStop = false;
@@ -183,13 +177,13 @@
             // 
             // pnUser
             // 
-            this.pnUser.BackColor = System.Drawing.Color.White;
+            this.pnUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.pnUser.Controls.Add(this.label2);
             this.pnUser.Controls.Add(this.pbUser);
-            this.pnUser.Location = new System.Drawing.Point(4, 344);
-            this.pnUser.Margin = new System.Windows.Forms.Padding(4, 5, 0, 0);
+            this.pnUser.Location = new System.Drawing.Point(3, 222);
+            this.pnUser.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.pnUser.Name = "pnUser";
-            this.pnUser.Size = new System.Drawing.Size(104, 108);
+            this.pnUser.Size = new System.Drawing.Size(69, 70);
             this.pnUser.TabIndex = 2;
             this.pnUser.Tag = "User";
             // 
@@ -197,20 +191,18 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(16, 85);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(11, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 20);
+            this.label2.Size = new System.Drawing.Size(49, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Cá Nhân";
             // 
             // pbUser
             // 
             this.pbUser.Image = ((System.Drawing.Image)(resources.GetObject("pbUser.Image")));
-            this.pbUser.Location = new System.Drawing.Point(15, 9);
-            this.pbUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbUser.Location = new System.Drawing.Point(10, 6);
             this.pbUser.Name = "pbUser";
-            this.pbUser.Size = new System.Drawing.Size(74, 69);
+            this.pbUser.Size = new System.Drawing.Size(49, 45);
             this.pbUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbUser.TabIndex = 0;
             this.pbUser.TabStop = false;
@@ -218,13 +210,13 @@
             // 
             // pnShop
             // 
-            this.pnShop.BackColor = System.Drawing.Color.White;
+            this.pnShop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.pnShop.Controls.Add(this.label5);
             this.pnShop.Controls.Add(this.pbShop);
-            this.pnShop.Location = new System.Drawing.Point(4, 457);
-            this.pnShop.Margin = new System.Windows.Forms.Padding(4, 5, 0, 0);
+            this.pnShop.Location = new System.Drawing.Point(3, 295);
+            this.pnShop.Margin = new System.Windows.Forms.Padding(3, 3, 0, 0);
             this.pnShop.Name = "pnShop";
-            this.pnShop.Size = new System.Drawing.Size(104, 108);
+            this.pnShop.Size = new System.Drawing.Size(69, 70);
             this.pnShop.TabIndex = 5;
             this.pnShop.Tag = "Shop";
             this.pnShop.Visible = false;
@@ -232,20 +224,18 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 85);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(10, 55);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 20);
+            this.label5.Size = new System.Drawing.Size(47, 13);
             this.label5.TabIndex = 1;
             this.label5.Text = "Quản Lý";
             // 
             // pbShop
             // 
             this.pbShop.Image = ((System.Drawing.Image)(resources.GetObject("pbShop.Image")));
-            this.pbShop.Location = new System.Drawing.Point(15, 9);
-            this.pbShop.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pbShop.Location = new System.Drawing.Point(10, 6);
             this.pbShop.Name = "pbShop";
-            this.pbShop.Size = new System.Drawing.Size(74, 69);
+            this.pbShop.Size = new System.Drawing.Size(49, 45);
             this.pbShop.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbShop.TabIndex = 0;
             this.pbShop.TabStop = false;
@@ -255,10 +245,9 @@
             // 
             this.pnBody.AutoScroll = true;
             this.pnBody.Controls.Add(this.home1);
-            this.pnBody.Location = new System.Drawing.Point(131, 5);
-            this.pnBody.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pnBody.Location = new System.Drawing.Point(87, 3);
             this.pnBody.Name = "pnBody";
-            this.pnBody.Size = new System.Drawing.Size(1570, 970);
+            this.pnBody.Size = new System.Drawing.Size(1047, 630);
             this.pnBody.TabIndex = 1;
             // 
             // home1
@@ -268,19 +257,19 @@
             this.home1.Location = new System.Drawing.Point(0, 0);
             this.home1.Margin = new System.Windows.Forms.Padding(0);
             this.home1.Name = "home1";
-            this.home1.Size = new System.Drawing.Size(1530, 1194);
+            this.home1.Size = new System.Drawing.Size(1024, 1019);
             this.home1.TabIndex = 0;
             // 
             // MuaBan_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.pnBody);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.Name = "MuaBan_Form";
-            this.Size = new System.Drawing.Size(1705, 975);
+            this.Size = new System.Drawing.Size(1137, 634);
             this.flowLayoutPanel1.ResumeLayout(false);
             this.pnCart.ResumeLayout(false);
             this.pnCart.PerformLayout();
