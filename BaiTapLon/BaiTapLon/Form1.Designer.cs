@@ -50,13 +50,14 @@
             this.pnHeader.Location = new System.Drawing.Point(0, 0);
             this.pnHeader.Margin = new System.Windows.Forms.Padding(0);
             this.pnHeader.Name = "pnHeader";
-            this.pnHeader.Size = new System.Drawing.Size(885, 51);
+            this.pnHeader.Size = new System.Drawing.Size(1143, 51);
             this.pnHeader.TabIndex = 0;
             // 
             // pbMinimum
             // 
+            this.pbMinimum.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbMinimum.Image = ((System.Drawing.Image)(resources.GetObject("pbMinimum.Image")));
-            this.pbMinimum.Location = new System.Drawing.Point(815, 12);
+            this.pbMinimum.Location = new System.Drawing.Point(1071, 12);
             this.pbMinimum.Name = "pbMinimum";
             this.pbMinimum.Size = new System.Drawing.Size(27, 23);
             this.pbMinimum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -69,7 +70,7 @@
             this.header_Form1.Location = new System.Drawing.Point(0, 0);
             this.header_Form1.Margin = new System.Windows.Forms.Padding(0);
             this.header_Form1.Name = "header_Form1";
-            this.header_Form1.Size = new System.Drawing.Size(800, 51);
+            this.header_Form1.Size = new System.Drawing.Size(1032, 51);
             this.header_Form1.TabIndex = 1;
             // 
             // btnExit
@@ -79,7 +80,7 @@
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Location = new System.Drawing.Point(846, 12);
+            this.btnExit.Location = new System.Drawing.Point(1103, 12);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(27, 23);
             this.btnExit.TabIndex = 0;
@@ -95,29 +96,28 @@
             this.Body.Location = new System.Drawing.Point(0, 51);
             this.Body.Margin = new System.Windows.Forms.Padding(0);
             this.Body.Name = "Body";
-            this.Body.Size = new System.Drawing.Size(885, 499);
+            this.Body.Size = new System.Drawing.Size(1143, 687);
             this.Body.TabIndex = 2;
             // 
             // muaBan_Form1
             // 
-            this.muaBan_Form1.AutoScroll = true;
             this.muaBan_Form1.BackColor = System.Drawing.Color.White;
             this.muaBan_Form1.Location = new System.Drawing.Point(0, 0);
             this.muaBan_Form1.Margin = new System.Windows.Forms.Padding(0);
             this.muaBan_Form1.Name = "muaBan_Form1";
-            this.muaBan_Form1.Size = new System.Drawing.Size(885, 499);
+            this.muaBan_Form1.Size = new System.Drawing.Size(1137, 634);
             this.muaBan_Form1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(885, 550);
+            this.ClientSize = new System.Drawing.Size(1143, 738);
             this.ControlBox = false;
             this.Controls.Add(this.Body);
             this.Controls.Add(this.pnHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.pnHeader.ResumeLayout(false);
@@ -132,9 +132,9 @@
         private System.Windows.Forms.Panel pnHeader;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Panel Body;
-        private GiaoDien.MuaBan.MuaBan_Form muaBan_Form1;
         private GiaoDien.MuaBan.Header_Form header_Form1;
         private System.Windows.Forms.PictureBox pbMinimum;
+        private GiaoDien.MuaBan.MuaBan_Form muaBan_Form1;
     }
 }
 
