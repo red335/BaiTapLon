@@ -76,6 +76,10 @@
     <Compile Include="GiaoDien\MuaBan\MuaBan_Form.Designer.cs">
       <DependentUpon>MuaBan_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="KetNoi\HangSXDAO.cs" />
+    <Compile Include="KetNoi\KetNoiCSDL.cs" />
+    <Compile Include="KetNoi\SanPhamDAO.cs" />
+    <Compile Include="Model\HangSX.cs" />
     <Compile Include="Model\SanPham.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -116,5 +120,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

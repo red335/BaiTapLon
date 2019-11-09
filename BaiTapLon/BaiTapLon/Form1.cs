@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
+using BaiTapLon.KetNoi;
 using System.Drawing;
 using System.Linq;
 using BaiTapLon.GiaoDien.MuaBan;
 using System.Windows.Forms;
+using System.IO;
 
 namespace BaiTapLon
 {
@@ -24,6 +25,7 @@ namespace BaiTapLon
         }
         private void Add_Main_Form() {
             Body.Controls.Add(muaBan_Form);
+            
         }
 
 
