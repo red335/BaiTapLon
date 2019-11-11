@@ -47,8 +47,10 @@ namespace BaiTapLon
         { 
             (sender as PictureBox).BackColor = pnHeader.BackColor;
         }
-        #endregion
 
+
+
+        #endregion
 
 
         #region GIAO DIỆN
