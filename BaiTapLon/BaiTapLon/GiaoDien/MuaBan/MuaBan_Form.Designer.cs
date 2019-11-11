@@ -46,7 +46,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.pbShop = new System.Windows.Forms.PictureBox();
             this.pnBody = new System.Windows.Forms.Panel();
-            this.home1 = new BaiTapLon.GiaoDien.MuaBan.Home();
             this.flowLayoutPanel1.SuspendLayout();
             this.pnCart.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbCart)).BeginInit();
@@ -58,7 +57,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbUser)).BeginInit();
             this.pnShop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbShop)).BeginInit();
-            this.pnBody.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -244,21 +242,10 @@
             // pnBody
             // 
             this.pnBody.AutoScroll = true;
-            this.pnBody.Controls.Add(this.home1);
             this.pnBody.Location = new System.Drawing.Point(87, 3);
             this.pnBody.Name = "pnBody";
             this.pnBody.Size = new System.Drawing.Size(1047, 630);
             this.pnBody.TabIndex = 1;
-            // 
-            // home1
-            // 
-            this.home1.AutoSize = true;
-            this.home1.BackColor = System.Drawing.Color.White;
-            this.home1.Location = new System.Drawing.Point(0, 0);
-            this.home1.Margin = new System.Windows.Forms.Padding(0);
-            this.home1.Name = "home1";
-            this.home1.Size = new System.Drawing.Size(1024, 1019);
-            this.home1.TabIndex = 0;
             // 
             // MuaBan_Form
             // 
@@ -286,8 +273,6 @@
             this.pnShop.ResumeLayout(false);
             this.pnShop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbShop)).EndInit();
-            this.pnBody.ResumeLayout(false);
-            this.pnBody.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -311,6 +296,5 @@
         private System.Windows.Forms.PictureBox pbShop;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel pnBody;
-        private Home home1;
     }
 }

@@ -10,7 +10,7 @@ namespace BaiTapLon.KetNoi
 {
     class HangSXDAO : KetNoiCSDL
     {
-        public  SanPham getElement(string id)
+        public  HangSX getElement(string id)
         { string query = "select * from HANGSX where MAHSX = '"+id +"'" ;
             DataTable dataTable = DocCSDL(query);
             HangSX hangSX1 = null;

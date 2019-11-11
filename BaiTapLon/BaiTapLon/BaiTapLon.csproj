@@ -76,6 +76,12 @@
     <Compile Include="GiaoDien\MuaBan\MuaBan_Form.Designer.cs">
       <DependentUpon>MuaBan_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\MuaBan\SanPham_Form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\MuaBan\SanPham_Form.Designer.cs">
+      <DependentUpon>SanPham_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="KetNoi\HangSXDAO.cs" />
     <Compile Include="KetNoi\KetNoiCSDL.cs" />
     <Compile Include="KetNoi\SanPhamDAO.cs" />
@@ -97,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\MuaBan\MuaBan_Form.resx">
       <DependentUpon>MuaBan_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\MuaBan\SanPham_Form.resx">
+      <DependentUpon>SanPham_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

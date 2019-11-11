@@ -17,14 +17,15 @@ namespace BaiTapLon
         public Form1()
         {
             InitializeComponent();
-            muaBan_Form = new MuaBan_Form(Body.Size);
+          
             pbMinimum.Click += btnMinimum_Click;
             pbMinimum.MouseHover += btnMinimum_Hover;
             pbMinimum.MouseLeave += btnMinimum_Leave;
             Add_Main_Form();
         }
         private void Add_Main_Form() {
-            Body.Controls.Add(muaBan_Form);
+            Body.Controls.Clear();
+            Body.Controls.Add(new MuaBan_Form(Body.Size));
             
         }
 
@@ -43,8 +44,7 @@ namespace BaiTapLon
             (sender as PictureBox).BackColor = Color.FromArgb(0, 122, 244);
         }
         private void btnMinimum_Leave(object sender, EventArgs e)
-        {
-
+        { 
             (sender as PictureBox).BackColor = pnHeader.BackColor;
         }
         #endregion

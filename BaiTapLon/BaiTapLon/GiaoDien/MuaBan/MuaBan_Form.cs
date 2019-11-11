@@ -23,7 +23,7 @@ namespace BaiTapLon.GiaoDien.MuaBan
             this.Size = parentSize;
             this.Location = new Point(0, 0);
             LoadEvent();
-            pnBody.Controls.Add(new Home());
+            pnBody.Controls.Add(new SanPham_Form());
         }
         public MuaBan_Form()
         {

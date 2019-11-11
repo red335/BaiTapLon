@@ -42,47 +42,27 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button15 = new System.Windows.Forms.Button();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.button16 = new System.Windows.Forms.Button();
             this.button19 = new System.Windows.Forms.Button();
+            this.button16 = new System.Windows.Forms.Button();
+            this.FlistKM = new System.Windows.Forms.FlowLayoutPanel();
             this.chiTietSanPham_16 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_17 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_18 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_19 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_110 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
+            this.FlistNoiBat = new System.Windows.Forms.FlowLayoutPanel();
             this.chiTietSanPham_11 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_12 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_13 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_14 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_15 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.FlistDT = new System.Windows.Forms.FlowLayoutPanel();
             this.chiTietSanPham_111 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_112 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_113 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
@@ -93,6 +73,15 @@
             this.chiTietSanPham_118 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_119 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_120 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.button13 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.button8 = new System.Windows.Forms.Button();
+            this.FlistLK = new System.Windows.Forms.FlowLayoutPanel();
             this.chiTietSanPham_121 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_122 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_123 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
@@ -103,25 +92,36 @@
             this.chiTietSanPham_128 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_129 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_130 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button14 = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button15 = new System.Windows.Forms.Button();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.button18 = new System.Windows.Forms.Button();
+            this.button17 = new System.Windows.Forms.Button();
+            this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.chiTietSanPham_131 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_132 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_133 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_134 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_135 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
+            this.label8 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel5.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
+            this.FlistKM.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.flowLayoutPanel2.SuspendLayout();
+            this.FlistNoiBat.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.FlistDT.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.flowLayoutPanel4.SuspendLayout();
             this.panel8.SuspendLayout();
-            this.flowLayoutPanel5.SuspendLayout();
+            this.FlistLK.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
             this.flowLayoutPanel6.SuspendLayout();
@@ -292,7 +292,7 @@
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.button19);
             this.panel5.Controls.Add(this.button16);
-            this.panel5.Controls.Add(this.flowLayoutPanel3);
+            this.panel5.Controls.Add(this.FlistKM);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(0, 162);
             this.panel5.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
@@ -300,19 +300,91 @@
             this.panel5.Size = new System.Drawing.Size(1022, 384);
             this.panel5.TabIndex = 1;
             // 
-            // flowLayoutPanel3
+            // button19
             // 
-            this.flowLayoutPanel3.Controls.Add(this.chiTietSanPham_16);
-            this.flowLayoutPanel3.Controls.Add(this.chiTietSanPham_17);
-            this.flowLayoutPanel3.Controls.Add(this.chiTietSanPham_18);
-            this.flowLayoutPanel3.Controls.Add(this.chiTietSanPham_19);
-            this.flowLayoutPanel3.Controls.Add(this.chiTietSanPham_110);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(0, 62);
-            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(1020, 299);
-            this.flowLayoutPanel3.TabIndex = 2;
-            this.flowLayoutPanel3.WrapContents = false;
+            this.button19.FlatAppearance.BorderSize = 0;
+            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Location = new System.Drawing.Point(942, 360);
+            this.button19.Name = "button19";
+            this.button19.Size = new System.Drawing.Size(75, 23);
+            this.button19.TabIndex = 4;
+            this.button19.Text = ">>>";
+            this.button19.UseVisualStyleBackColor = true;
+            // 
+            // button16
+            // 
+            this.button16.FlatAppearance.BorderSize = 0;
+            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Location = new System.Drawing.Point(-1, 360);
+            this.button16.Name = "button16";
+            this.button16.Size = new System.Drawing.Size(75, 23);
+            this.button16.TabIndex = 3;
+            this.button16.Text = "<<<";
+            this.button16.UseVisualStyleBackColor = true;
+            // 
+            // FlistKM
+            // 
+            this.FlistKM.Controls.Add(this.chiTietSanPham_16);
+            this.FlistKM.Controls.Add(this.chiTietSanPham_17);
+            this.FlistKM.Controls.Add(this.chiTietSanPham_18);
+            this.FlistKM.Controls.Add(this.chiTietSanPham_19);
+            this.FlistKM.Controls.Add(this.chiTietSanPham_110);
+            this.FlistKM.Location = new System.Drawing.Point(0, 62);
+            this.FlistKM.Margin = new System.Windows.Forms.Padding(0);
+            this.FlistKM.Name = "FlistKM";
+            this.FlistKM.Size = new System.Drawing.Size(1020, 299);
+            this.FlistKM.TabIndex = 2;
+            this.FlistKM.WrapContents = false;
+            // 
+            // chiTietSanPham_16
+            // 
+            this.chiTietSanPham_16.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_16.Location = new System.Drawing.Point(0, 0);
+            this.chiTietSanPham_16.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_16.Name = "chiTietSanPham_16";
+            this.chiTietSanPham_16.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_16.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_16.TabIndex = 0;
+            // 
+            // chiTietSanPham_17
+            // 
+            this.chiTietSanPham_17.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_17.Location = new System.Drawing.Point(204, 0);
+            this.chiTietSanPham_17.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_17.Name = "chiTietSanPham_17";
+            this.chiTietSanPham_17.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_17.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_17.TabIndex = 1;
+            // 
+            // chiTietSanPham_18
+            // 
+            this.chiTietSanPham_18.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_18.Location = new System.Drawing.Point(408, 0);
+            this.chiTietSanPham_18.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_18.Name = "chiTietSanPham_18";
+            this.chiTietSanPham_18.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_18.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_18.TabIndex = 2;
+            // 
+            // chiTietSanPham_19
+            // 
+            this.chiTietSanPham_19.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_19.Location = new System.Drawing.Point(612, 0);
+            this.chiTietSanPham_19.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_19.Name = "chiTietSanPham_19";
+            this.chiTietSanPham_19.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_19.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_19.TabIndex = 3;
+            // 
+            // chiTietSanPham_110
+            // 
+            this.chiTietSanPham_110.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_110.Location = new System.Drawing.Point(816, 0);
+            this.chiTietSanPham_110.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_110.Name = "chiTietSanPham_110";
+            this.chiTietSanPham_110.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_110.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_110.TabIndex = 4;
             // 
             // label5
             // 
@@ -333,7 +405,7 @@
             this.panel4.AutoSize = true;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.button7);
-            this.panel4.Controls.Add(this.flowLayoutPanel2);
+            this.panel4.Controls.Add(this.FlistNoiBat);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(0, 556);
             this.panel4.Margin = new System.Windows.Forms.Padding(0, 10, 0, 0);
@@ -355,19 +427,69 @@
             this.button7.Text = "Xem thêm 20 sản phẩm";
             this.button7.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel2
+            // FlistNoiBat
             // 
-            this.flowLayoutPanel2.AutoSize = true;
-            this.flowLayoutPanel2.Controls.Add(this.chiTietSanPham_11);
-            this.flowLayoutPanel2.Controls.Add(this.chiTietSanPham_12);
-            this.flowLayoutPanel2.Controls.Add(this.chiTietSanPham_13);
-            this.flowLayoutPanel2.Controls.Add(this.chiTietSanPham_14);
-            this.flowLayoutPanel2.Controls.Add(this.chiTietSanPham_15);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(1, 46);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(1021, 296);
-            this.flowLayoutPanel2.TabIndex = 1;
+            this.FlistNoiBat.AutoSize = true;
+            this.FlistNoiBat.Controls.Add(this.chiTietSanPham_11);
+            this.FlistNoiBat.Controls.Add(this.chiTietSanPham_12);
+            this.FlistNoiBat.Controls.Add(this.chiTietSanPham_13);
+            this.FlistNoiBat.Controls.Add(this.chiTietSanPham_14);
+            this.FlistNoiBat.Controls.Add(this.chiTietSanPham_15);
+            this.FlistNoiBat.Location = new System.Drawing.Point(1, 46);
+            this.FlistNoiBat.Margin = new System.Windows.Forms.Padding(0);
+            this.FlistNoiBat.Name = "FlistNoiBat";
+            this.FlistNoiBat.Size = new System.Drawing.Size(1021, 296);
+            this.FlistNoiBat.TabIndex = 1;
+            // 
+            // chiTietSanPham_11
+            // 
+            this.chiTietSanPham_11.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_11.Location = new System.Drawing.Point(0, 0);
+            this.chiTietSanPham_11.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_11.Name = "chiTietSanPham_11";
+            this.chiTietSanPham_11.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_11.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_11.TabIndex = 0;
+            // 
+            // chiTietSanPham_12
+            // 
+            this.chiTietSanPham_12.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_12.Location = new System.Drawing.Point(204, 0);
+            this.chiTietSanPham_12.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_12.Name = "chiTietSanPham_12";
+            this.chiTietSanPham_12.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_12.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_12.TabIndex = 1;
+            // 
+            // chiTietSanPham_13
+            // 
+            this.chiTietSanPham_13.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_13.Location = new System.Drawing.Point(408, 0);
+            this.chiTietSanPham_13.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_13.Name = "chiTietSanPham_13";
+            this.chiTietSanPham_13.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_13.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_13.TabIndex = 2;
+            // 
+            // chiTietSanPham_14
+            // 
+            this.chiTietSanPham_14.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_14.Location = new System.Drawing.Point(612, 0);
+            this.chiTietSanPham_14.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_14.Name = "chiTietSanPham_14";
+            this.chiTietSanPham_14.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_14.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_14.TabIndex = 3;
+            // 
+            // chiTietSanPham_15
+            // 
+            this.chiTietSanPham_15.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_15.Location = new System.Drawing.Point(816, 0);
+            this.chiTietSanPham_15.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_15.Name = "chiTietSanPham_15";
+            this.chiTietSanPham_15.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_15.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_15.TabIndex = 4;
             // 
             // label4
             // 
@@ -382,36 +504,152 @@
             this.label4.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
             this.label4.Size = new System.Drawing.Size(1022, 37);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Sản Phẩm Mới";
+            this.label4.Text = "Sản Phẩm Nổi Bật";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(139)))), ((int)(((byte)(139)))));
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(363, -3);
-            this.button1.Margin = new System.Windows.Forms.Padding(0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 41);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "SAMSUNG";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // panel6
             // 
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.button2);
-            this.panel6.Controls.Add(this.flowLayoutPanel4);
+            this.panel6.Controls.Add(this.FlistDT);
             this.panel6.Controls.Add(this.panel7);
             this.panel6.Location = new System.Drawing.Point(0, 955);
             this.panel6.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1021, 654);
             this.panel6.TabIndex = 2;
+            // 
+            // button2
+            // 
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Green;
+            this.button2.Location = new System.Drawing.Point(422, 612);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(177, 32);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Xem thêm 20 sản phẩm";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // FlistDT
+            // 
+            this.FlistDT.Controls.Add(this.chiTietSanPham_111);
+            this.FlistDT.Controls.Add(this.chiTietSanPham_112);
+            this.FlistDT.Controls.Add(this.chiTietSanPham_113);
+            this.FlistDT.Controls.Add(this.chiTietSanPham_114);
+            this.FlistDT.Controls.Add(this.chiTietSanPham_115);
+            this.FlistDT.Controls.Add(this.chiTietSanPham_116);
+            this.FlistDT.Controls.Add(this.chiTietSanPham_117);
+            this.FlistDT.Controls.Add(this.chiTietSanPham_118);
+            this.FlistDT.Controls.Add(this.chiTietSanPham_119);
+            this.FlistDT.Controls.Add(this.chiTietSanPham_120);
+            this.FlistDT.Location = new System.Drawing.Point(-1, 43);
+            this.FlistDT.Margin = new System.Windows.Forms.Padding(0);
+            this.FlistDT.Name = "FlistDT";
+            this.FlistDT.Size = new System.Drawing.Size(1020, 567);
+            this.FlistDT.TabIndex = 1;
+            // 
+            // chiTietSanPham_111
+            // 
+            this.chiTietSanPham_111.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_111.Location = new System.Drawing.Point(0, 0);
+            this.chiTietSanPham_111.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_111.Name = "chiTietSanPham_111";
+            this.chiTietSanPham_111.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_111.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_111.TabIndex = 0;
+            // 
+            // chiTietSanPham_112
+            // 
+            this.chiTietSanPham_112.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_112.Location = new System.Drawing.Point(204, 0);
+            this.chiTietSanPham_112.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_112.Name = "chiTietSanPham_112";
+            this.chiTietSanPham_112.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_112.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_112.TabIndex = 1;
+            // 
+            // chiTietSanPham_113
+            // 
+            this.chiTietSanPham_113.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_113.Location = new System.Drawing.Point(408, 0);
+            this.chiTietSanPham_113.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_113.Name = "chiTietSanPham_113";
+            this.chiTietSanPham_113.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_113.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_113.TabIndex = 2;
+            // 
+            // chiTietSanPham_114
+            // 
+            this.chiTietSanPham_114.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_114.Location = new System.Drawing.Point(612, 0);
+            this.chiTietSanPham_114.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_114.Name = "chiTietSanPham_114";
+            this.chiTietSanPham_114.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_114.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_114.TabIndex = 3;
+            // 
+            // chiTietSanPham_115
+            // 
+            this.chiTietSanPham_115.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_115.Location = new System.Drawing.Point(816, 0);
+            this.chiTietSanPham_115.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_115.Name = "chiTietSanPham_115";
+            this.chiTietSanPham_115.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_115.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_115.TabIndex = 4;
+            // 
+            // chiTietSanPham_116
+            // 
+            this.chiTietSanPham_116.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_116.Location = new System.Drawing.Point(0, 276);
+            this.chiTietSanPham_116.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_116.Name = "chiTietSanPham_116";
+            this.chiTietSanPham_116.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_116.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_116.TabIndex = 5;
+            // 
+            // chiTietSanPham_117
+            // 
+            this.chiTietSanPham_117.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_117.Location = new System.Drawing.Point(204, 276);
+            this.chiTietSanPham_117.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_117.Name = "chiTietSanPham_117";
+            this.chiTietSanPham_117.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_117.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_117.TabIndex = 6;
+            // 
+            // chiTietSanPham_118
+            // 
+            this.chiTietSanPham_118.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_118.Location = new System.Drawing.Point(408, 276);
+            this.chiTietSanPham_118.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_118.Name = "chiTietSanPham_118";
+            this.chiTietSanPham_118.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_118.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_118.TabIndex = 7;
+            // 
+            // chiTietSanPham_119
+            // 
+            this.chiTietSanPham_119.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_119.Location = new System.Drawing.Point(612, 276);
+            this.chiTietSanPham_119.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_119.Name = "chiTietSanPham_119";
+            this.chiTietSanPham_119.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_119.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_119.TabIndex = 8;
+            // 
+            // chiTietSanPham_120
+            // 
+            this.chiTietSanPham_120.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_120.Location = new System.Drawing.Point(816, 276);
+            this.chiTietSanPham_120.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_120.Name = "chiTietSanPham_120";
+            this.chiTietSanPham_120.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_120.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_120.TabIndex = 9;
             // 
             // panel7
             // 
@@ -427,51 +665,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1019, 40);
             this.panel7.TabIndex = 0;
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(139)))), ((int)(((byte)(139)))));
-            this.label6.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(-2, 0);
-            this.label6.Name = "label6";
-            this.label6.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            this.label6.Size = new System.Drawing.Size(207, 38);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Điện Thoại";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(139)))), ((int)(((byte)(139)))));
-            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Location = new System.Drawing.Point(449, -2);
-            this.button11.Margin = new System.Windows.Forms.Padding(0);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(79, 41);
-            this.button11.TabIndex = 17;
-            this.button11.Text = "OPPO";
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(139)))), ((int)(((byte)(139)))));
-            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(528, -2);
-            this.button12.Margin = new System.Windows.Forms.Padding(0);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(79, 41);
-            this.button12.TabIndex = 18;
-            this.button12.Text = "VIVO";
-            this.button12.UseVisualStyleBackColor = false;
             // 
             // button13
             // 
@@ -489,43 +682,72 @@
             this.button13.Text = "XIAOMI";
             this.button13.UseVisualStyleBackColor = false;
             // 
-            // flowLayoutPanel4
+            // button12
             // 
-            this.flowLayoutPanel4.Controls.Add(this.chiTietSanPham_111);
-            this.flowLayoutPanel4.Controls.Add(this.chiTietSanPham_112);
-            this.flowLayoutPanel4.Controls.Add(this.chiTietSanPham_113);
-            this.flowLayoutPanel4.Controls.Add(this.chiTietSanPham_114);
-            this.flowLayoutPanel4.Controls.Add(this.chiTietSanPham_115);
-            this.flowLayoutPanel4.Controls.Add(this.chiTietSanPham_116);
-            this.flowLayoutPanel4.Controls.Add(this.chiTietSanPham_117);
-            this.flowLayoutPanel4.Controls.Add(this.chiTietSanPham_118);
-            this.flowLayoutPanel4.Controls.Add(this.chiTietSanPham_119);
-            this.flowLayoutPanel4.Controls.Add(this.chiTietSanPham_120);
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(-1, 43);
-            this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(1020, 567);
-            this.flowLayoutPanel4.TabIndex = 1;
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(139)))), ((int)(((byte)(139)))));
+            this.button12.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.Color.White;
+            this.button12.Location = new System.Drawing.Point(528, -2);
+            this.button12.Margin = new System.Windows.Forms.Padding(0);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(79, 41);
+            this.button12.TabIndex = 18;
+            this.button12.Text = "VIVO";
+            this.button12.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // button11
             // 
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Green;
-            this.button2.Location = new System.Drawing.Point(422, 612);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(177, 32);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Xem thêm 20 sản phẩm";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(139)))), ((int)(((byte)(139)))));
+            this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.ForeColor = System.Drawing.Color.White;
+            this.button11.Location = new System.Drawing.Point(449, -2);
+            this.button11.Margin = new System.Windows.Forms.Padding(0);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(79, 41);
+            this.button11.TabIndex = 17;
+            this.button11.Text = "OPPO";
+            this.button11.UseVisualStyleBackColor = false;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(139)))), ((int)(((byte)(139)))));
+            this.label6.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(-2, 0);
+            this.label6.Name = "label6";
+            this.label6.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            this.label6.Size = new System.Drawing.Size(207, 38);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Điện Thoại";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(139)))), ((int)(((byte)(139)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(363, -3);
+            this.button1.Margin = new System.Windows.Forms.Padding(0);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(86, 41);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "SAMSUNG";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // panel8
             // 
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.button8);
-            this.panel8.Controls.Add(this.flowLayoutPanel5);
+            this.panel8.Controls.Add(this.FlistLK);
             this.panel8.Controls.Add(this.panel9);
             this.panel8.Location = new System.Drawing.Point(0, 1629);
             this.panel8.Margin = new System.Windows.Forms.Padding(0, 20, 0, 0);
@@ -547,23 +769,123 @@
             this.button8.Text = "Xem thêm 20 sản phẩm";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel5
+            // FlistLK
             // 
-            this.flowLayoutPanel5.Controls.Add(this.chiTietSanPham_121);
-            this.flowLayoutPanel5.Controls.Add(this.chiTietSanPham_122);
-            this.flowLayoutPanel5.Controls.Add(this.chiTietSanPham_123);
-            this.flowLayoutPanel5.Controls.Add(this.chiTietSanPham_124);
-            this.flowLayoutPanel5.Controls.Add(this.chiTietSanPham_125);
-            this.flowLayoutPanel5.Controls.Add(this.chiTietSanPham_126);
-            this.flowLayoutPanel5.Controls.Add(this.chiTietSanPham_127);
-            this.flowLayoutPanel5.Controls.Add(this.chiTietSanPham_128);
-            this.flowLayoutPanel5.Controls.Add(this.chiTietSanPham_129);
-            this.flowLayoutPanel5.Controls.Add(this.chiTietSanPham_130);
-            this.flowLayoutPanel5.Location = new System.Drawing.Point(-1, 43);
-            this.flowLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel5.Name = "flowLayoutPanel5";
-            this.flowLayoutPanel5.Size = new System.Drawing.Size(1020, 567);
-            this.flowLayoutPanel5.TabIndex = 1;
+            this.FlistLK.Controls.Add(this.chiTietSanPham_121);
+            this.FlistLK.Controls.Add(this.chiTietSanPham_122);
+            this.FlistLK.Controls.Add(this.chiTietSanPham_123);
+            this.FlistLK.Controls.Add(this.chiTietSanPham_124);
+            this.FlistLK.Controls.Add(this.chiTietSanPham_125);
+            this.FlistLK.Controls.Add(this.chiTietSanPham_126);
+            this.FlistLK.Controls.Add(this.chiTietSanPham_127);
+            this.FlistLK.Controls.Add(this.chiTietSanPham_128);
+            this.FlistLK.Controls.Add(this.chiTietSanPham_129);
+            this.FlistLK.Controls.Add(this.chiTietSanPham_130);
+            this.FlistLK.Location = new System.Drawing.Point(-1, 43);
+            this.FlistLK.Margin = new System.Windows.Forms.Padding(0);
+            this.FlistLK.Name = "FlistLK";
+            this.FlistLK.Size = new System.Drawing.Size(1020, 567);
+            this.FlistLK.TabIndex = 1;
+            // 
+            // chiTietSanPham_121
+            // 
+            this.chiTietSanPham_121.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_121.Location = new System.Drawing.Point(0, 0);
+            this.chiTietSanPham_121.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_121.Name = "chiTietSanPham_121";
+            this.chiTietSanPham_121.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_121.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_121.TabIndex = 0;
+            // 
+            // chiTietSanPham_122
+            // 
+            this.chiTietSanPham_122.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_122.Location = new System.Drawing.Point(204, 0);
+            this.chiTietSanPham_122.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_122.Name = "chiTietSanPham_122";
+            this.chiTietSanPham_122.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_122.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_122.TabIndex = 1;
+            // 
+            // chiTietSanPham_123
+            // 
+            this.chiTietSanPham_123.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_123.Location = new System.Drawing.Point(408, 0);
+            this.chiTietSanPham_123.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_123.Name = "chiTietSanPham_123";
+            this.chiTietSanPham_123.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_123.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_123.TabIndex = 2;
+            // 
+            // chiTietSanPham_124
+            // 
+            this.chiTietSanPham_124.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_124.Location = new System.Drawing.Point(612, 0);
+            this.chiTietSanPham_124.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_124.Name = "chiTietSanPham_124";
+            this.chiTietSanPham_124.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_124.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_124.TabIndex = 3;
+            // 
+            // chiTietSanPham_125
+            // 
+            this.chiTietSanPham_125.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_125.Location = new System.Drawing.Point(816, 0);
+            this.chiTietSanPham_125.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_125.Name = "chiTietSanPham_125";
+            this.chiTietSanPham_125.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_125.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_125.TabIndex = 4;
+            // 
+            // chiTietSanPham_126
+            // 
+            this.chiTietSanPham_126.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_126.Location = new System.Drawing.Point(0, 276);
+            this.chiTietSanPham_126.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_126.Name = "chiTietSanPham_126";
+            this.chiTietSanPham_126.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_126.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_126.TabIndex = 5;
+            // 
+            // chiTietSanPham_127
+            // 
+            this.chiTietSanPham_127.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_127.Location = new System.Drawing.Point(204, 276);
+            this.chiTietSanPham_127.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_127.Name = "chiTietSanPham_127";
+            this.chiTietSanPham_127.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_127.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_127.TabIndex = 6;
+            // 
+            // chiTietSanPham_128
+            // 
+            this.chiTietSanPham_128.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_128.Location = new System.Drawing.Point(408, 276);
+            this.chiTietSanPham_128.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_128.Name = "chiTietSanPham_128";
+            this.chiTietSanPham_128.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_128.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_128.TabIndex = 7;
+            // 
+            // chiTietSanPham_129
+            // 
+            this.chiTietSanPham_129.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_129.Location = new System.Drawing.Point(612, 276);
+            this.chiTietSanPham_129.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_129.Name = "chiTietSanPham_129";
+            this.chiTietSanPham_129.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_129.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_129.TabIndex = 8;
+            // 
+            // chiTietSanPham_130
+            // 
+            this.chiTietSanPham_130.BackColor = System.Drawing.Color.White;
+            this.chiTietSanPham_130.Location = new System.Drawing.Point(816, 276);
+            this.chiTietSanPham_130.Margin = new System.Windows.Forms.Padding(0);
+            this.chiTietSanPham_130.Name = "chiTietSanPham_130";
+            this.chiTietSanPham_130.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
+            this.chiTietSanPham_130.Size = new System.Drawing.Size(204, 276);
+            this.chiTietSanPham_130.TabIndex = 9;
             // 
             // panel9
             // 
@@ -671,35 +993,21 @@
             this.panel10.Size = new System.Drawing.Size(1024, 344);
             this.panel10.TabIndex = 4;
             // 
-            // flowLayoutPanel6
+            // button18
             // 
-            this.flowLayoutPanel6.AutoSize = true;
-            this.flowLayoutPanel6.Controls.Add(this.chiTietSanPham_131);
-            this.flowLayoutPanel6.Controls.Add(this.chiTietSanPham_132);
-            this.flowLayoutPanel6.Controls.Add(this.chiTietSanPham_133);
-            this.flowLayoutPanel6.Controls.Add(this.chiTietSanPham_134);
-            this.flowLayoutPanel6.Controls.Add(this.chiTietSanPham_135);
-            this.flowLayoutPanel6.Location = new System.Drawing.Point(1, 46);
-            this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
-            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
-            this.flowLayoutPanel6.Size = new System.Drawing.Size(1021, 296);
-            this.flowLayoutPanel6.TabIndex = 1;
-            // 
-            // label8
-            // 
-            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(139)))), ((int)(((byte)(139)))));
-            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(0, 0);
-            this.label8.Margin = new System.Windows.Forms.Padding(0);
-            this.label8.Name = "label8";
-            this.label8.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
-            this.label8.Size = new System.Drawing.Size(1022, 40);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Lịch Sử";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(139)))), ((int)(((byte)(139)))));
+            this.button18.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button18.FlatAppearance.BorderSize = 0;
+            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.ForeColor = System.Drawing.Color.White;
+            this.button18.Location = new System.Drawing.Point(219, -1);
+            this.button18.Margin = new System.Windows.Forms.Padding(0);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(79, 41);
+            this.button18.TabIndex = 21;
+            this.button18.Text = "Đặt Mua";
+            this.button18.UseVisualStyleBackColor = false;
             // 
             // button17
             // 
@@ -717,343 +1025,19 @@
             this.button17.Text = "Xem";
             this.button17.UseVisualStyleBackColor = false;
             // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(139)))), ((int)(((byte)(139)))));
-            this.button18.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button18.FlatAppearance.BorderSize = 0;
-            this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button18.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ForeColor = System.Drawing.Color.White;
-            this.button18.Location = new System.Drawing.Point(219, -1);
-            this.button18.Margin = new System.Windows.Forms.Padding(0);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(79, 41);
-            this.button18.TabIndex = 21;
-            this.button18.Text = "Đặt Mua";
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // button16
-            // 
-            this.button16.FlatAppearance.BorderSize = 0;
-            this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button16.Location = new System.Drawing.Point(-1, 360);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(75, 23);
-            this.button16.TabIndex = 3;
-            this.button16.Text = "<<<";
-            this.button16.UseVisualStyleBackColor = true;
-            // 
-            // button19
-            // 
-            this.button19.FlatAppearance.BorderSize = 0;
-            this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button19.Location = new System.Drawing.Point(942, 360);
-            this.button19.Name = "button19";
-            this.button19.Size = new System.Drawing.Size(75, 23);
-            this.button19.TabIndex = 4;
-            this.button19.Text = ">>>";
-            this.button19.UseVisualStyleBackColor = true;
-            // 
-            // chiTietSanPham_16
-            // 
-            this.chiTietSanPham_16.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_16.Location = new System.Drawing.Point(0, 0);
-            this.chiTietSanPham_16.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_16.Name = "chiTietSanPham_16";
-            this.chiTietSanPham_16.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_16.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_16.TabIndex = 0;
-            // 
-            // chiTietSanPham_17
-            // 
-            this.chiTietSanPham_17.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_17.Location = new System.Drawing.Point(204, 0);
-            this.chiTietSanPham_17.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_17.Name = "chiTietSanPham_17";
-            this.chiTietSanPham_17.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_17.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_17.TabIndex = 1;
-            // 
-            // chiTietSanPham_18
-            // 
-            this.chiTietSanPham_18.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_18.Location = new System.Drawing.Point(408, 0);
-            this.chiTietSanPham_18.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_18.Name = "chiTietSanPham_18";
-            this.chiTietSanPham_18.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_18.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_18.TabIndex = 2;
-            // 
-            // chiTietSanPham_19
-            // 
-            this.chiTietSanPham_19.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_19.Location = new System.Drawing.Point(612, 0);
-            this.chiTietSanPham_19.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_19.Name = "chiTietSanPham_19";
-            this.chiTietSanPham_19.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_19.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_19.TabIndex = 3;
-            // 
-            // chiTietSanPham_110
-            // 
-            this.chiTietSanPham_110.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_110.Location = new System.Drawing.Point(816, 0);
-            this.chiTietSanPham_110.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_110.Name = "chiTietSanPham_110";
-            this.chiTietSanPham_110.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_110.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_110.TabIndex = 4;
-            // 
-            // chiTietSanPham_11
-            // 
-            this.chiTietSanPham_11.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_11.Location = new System.Drawing.Point(0, 0);
-            this.chiTietSanPham_11.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_11.Name = "chiTietSanPham_11";
-            this.chiTietSanPham_11.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_11.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_11.TabIndex = 0;
-            // 
-            // chiTietSanPham_12
-            // 
-            this.chiTietSanPham_12.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_12.Location = new System.Drawing.Point(204, 0);
-            this.chiTietSanPham_12.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_12.Name = "chiTietSanPham_12";
-            this.chiTietSanPham_12.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_12.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_12.TabIndex = 1;
-            // 
-            // chiTietSanPham_13
-            // 
-            this.chiTietSanPham_13.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_13.Location = new System.Drawing.Point(408, 0);
-            this.chiTietSanPham_13.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_13.Name = "chiTietSanPham_13";
-            this.chiTietSanPham_13.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_13.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_13.TabIndex = 2;
-            // 
-            // chiTietSanPham_14
-            // 
-            this.chiTietSanPham_14.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_14.Location = new System.Drawing.Point(612, 0);
-            this.chiTietSanPham_14.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_14.Name = "chiTietSanPham_14";
-            this.chiTietSanPham_14.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_14.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_14.TabIndex = 3;
-            // 
-            // chiTietSanPham_15
-            // 
-            this.chiTietSanPham_15.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_15.Location = new System.Drawing.Point(816, 0);
-            this.chiTietSanPham_15.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_15.Name = "chiTietSanPham_15";
-            this.chiTietSanPham_15.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_15.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_15.TabIndex = 4;
-            // 
-            // chiTietSanPham_111
-            // 
-            this.chiTietSanPham_111.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_111.Location = new System.Drawing.Point(0, 0);
-            this.chiTietSanPham_111.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_111.Name = "chiTietSanPham_111";
-            this.chiTietSanPham_111.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_111.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_111.TabIndex = 0;
-            // 
-            // chiTietSanPham_112
-            // 
-            this.chiTietSanPham_112.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_112.Location = new System.Drawing.Point(204, 0);
-            this.chiTietSanPham_112.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_112.Name = "chiTietSanPham_112";
-            this.chiTietSanPham_112.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_112.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_112.TabIndex = 1;
-            // 
-            // chiTietSanPham_113
-            // 
-            this.chiTietSanPham_113.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_113.Location = new System.Drawing.Point(408, 0);
-            this.chiTietSanPham_113.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_113.Name = "chiTietSanPham_113";
-            this.chiTietSanPham_113.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_113.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_113.TabIndex = 2;
-            // 
-            // chiTietSanPham_114
-            // 
-            this.chiTietSanPham_114.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_114.Location = new System.Drawing.Point(612, 0);
-            this.chiTietSanPham_114.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_114.Name = "chiTietSanPham_114";
-            this.chiTietSanPham_114.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_114.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_114.TabIndex = 3;
-            // 
-            // chiTietSanPham_115
-            // 
-            this.chiTietSanPham_115.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_115.Location = new System.Drawing.Point(816, 0);
-            this.chiTietSanPham_115.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_115.Name = "chiTietSanPham_115";
-            this.chiTietSanPham_115.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_115.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_115.TabIndex = 4;
-            // 
-            // chiTietSanPham_116
-            // 
-            this.chiTietSanPham_116.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_116.Location = new System.Drawing.Point(0, 276);
-            this.chiTietSanPham_116.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_116.Name = "chiTietSanPham_116";
-            this.chiTietSanPham_116.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_116.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_116.TabIndex = 5;
-            // 
-            // chiTietSanPham_117
-            // 
-            this.chiTietSanPham_117.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_117.Location = new System.Drawing.Point(204, 276);
-            this.chiTietSanPham_117.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_117.Name = "chiTietSanPham_117";
-            this.chiTietSanPham_117.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_117.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_117.TabIndex = 6;
-            // 
-            // chiTietSanPham_118
-            // 
-            this.chiTietSanPham_118.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_118.Location = new System.Drawing.Point(408, 276);
-            this.chiTietSanPham_118.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_118.Name = "chiTietSanPham_118";
-            this.chiTietSanPham_118.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_118.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_118.TabIndex = 7;
-            // 
-            // chiTietSanPham_119
-            // 
-            this.chiTietSanPham_119.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_119.Location = new System.Drawing.Point(612, 276);
-            this.chiTietSanPham_119.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_119.Name = "chiTietSanPham_119";
-            this.chiTietSanPham_119.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_119.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_119.TabIndex = 8;
-            // 
-            // chiTietSanPham_120
-            // 
-            this.chiTietSanPham_120.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_120.Location = new System.Drawing.Point(816, 276);
-            this.chiTietSanPham_120.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_120.Name = "chiTietSanPham_120";
-            this.chiTietSanPham_120.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_120.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_120.TabIndex = 9;
-            // 
-            // chiTietSanPham_121
-            // 
-            this.chiTietSanPham_121.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_121.Location = new System.Drawing.Point(0, 0);
-            this.chiTietSanPham_121.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_121.Name = "chiTietSanPham_121";
-            this.chiTietSanPham_121.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_121.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_121.TabIndex = 0;
-            // 
-            // chiTietSanPham_122
-            // 
-            this.chiTietSanPham_122.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_122.Location = new System.Drawing.Point(204, 0);
-            this.chiTietSanPham_122.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_122.Name = "chiTietSanPham_122";
-            this.chiTietSanPham_122.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_122.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_122.TabIndex = 1;
-            // 
-            // chiTietSanPham_123
-            // 
-            this.chiTietSanPham_123.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_123.Location = new System.Drawing.Point(408, 0);
-            this.chiTietSanPham_123.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_123.Name = "chiTietSanPham_123";
-            this.chiTietSanPham_123.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_123.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_123.TabIndex = 2;
-            // 
-            // chiTietSanPham_124
-            // 
-            this.chiTietSanPham_124.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_124.Location = new System.Drawing.Point(612, 0);
-            this.chiTietSanPham_124.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_124.Name = "chiTietSanPham_124";
-            this.chiTietSanPham_124.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_124.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_124.TabIndex = 3;
-            // 
-            // chiTietSanPham_125
-            // 
-            this.chiTietSanPham_125.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_125.Location = new System.Drawing.Point(816, 0);
-            this.chiTietSanPham_125.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_125.Name = "chiTietSanPham_125";
-            this.chiTietSanPham_125.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_125.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_125.TabIndex = 4;
-            // 
-            // chiTietSanPham_126
-            // 
-            this.chiTietSanPham_126.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_126.Location = new System.Drawing.Point(0, 276);
-            this.chiTietSanPham_126.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_126.Name = "chiTietSanPham_126";
-            this.chiTietSanPham_126.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_126.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_126.TabIndex = 5;
-            // 
-            // chiTietSanPham_127
-            // 
-            this.chiTietSanPham_127.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_127.Location = new System.Drawing.Point(204, 276);
-            this.chiTietSanPham_127.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_127.Name = "chiTietSanPham_127";
-            this.chiTietSanPham_127.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_127.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_127.TabIndex = 6;
-            // 
-            // chiTietSanPham_128
-            // 
-            this.chiTietSanPham_128.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_128.Location = new System.Drawing.Point(408, 276);
-            this.chiTietSanPham_128.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_128.Name = "chiTietSanPham_128";
-            this.chiTietSanPham_128.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_128.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_128.TabIndex = 7;
-            // 
-            // chiTietSanPham_129
-            // 
-            this.chiTietSanPham_129.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_129.Location = new System.Drawing.Point(612, 276);
-            this.chiTietSanPham_129.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_129.Name = "chiTietSanPham_129";
-            this.chiTietSanPham_129.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_129.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_129.TabIndex = 8;
-            // 
-            // chiTietSanPham_130
-            // 
-            this.chiTietSanPham_130.BackColor = System.Drawing.Color.White;
-            this.chiTietSanPham_130.Location = new System.Drawing.Point(816, 276);
-            this.chiTietSanPham_130.Margin = new System.Windows.Forms.Padding(0);
-            this.chiTietSanPham_130.Name = "chiTietSanPham_130";
-            this.chiTietSanPham_130.Padding = new System.Windows.Forms.Padding(0, 0, 0, 8);
-            this.chiTietSanPham_130.Size = new System.Drawing.Size(204, 276);
-            this.chiTietSanPham_130.TabIndex = 9;
+            // flowLayoutPanel6
+            // 
+            this.flowLayoutPanel6.AutoSize = true;
+            this.flowLayoutPanel6.Controls.Add(this.chiTietSanPham_131);
+            this.flowLayoutPanel6.Controls.Add(this.chiTietSanPham_132);
+            this.flowLayoutPanel6.Controls.Add(this.chiTietSanPham_133);
+            this.flowLayoutPanel6.Controls.Add(this.chiTietSanPham_134);
+            this.flowLayoutPanel6.Controls.Add(this.chiTietSanPham_135);
+            this.flowLayoutPanel6.Location = new System.Drawing.Point(1, 46);
+            this.flowLayoutPanel6.Margin = new System.Windows.Forms.Padding(0);
+            this.flowLayoutPanel6.Name = "flowLayoutPanel6";
+            this.flowLayoutPanel6.Size = new System.Drawing.Size(1021, 296);
+            this.flowLayoutPanel6.TabIndex = 1;
             // 
             // chiTietSanPham_131
             // 
@@ -1105,6 +1089,22 @@
             this.chiTietSanPham_135.Size = new System.Drawing.Size(204, 276);
             this.chiTietSanPham_135.TabIndex = 4;
             // 
+            // label8
+            // 
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(139)))), ((int)(((byte)(139)))));
+            this.label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label8.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label8.Font = new System.Drawing.Font("Tahoma", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(0, 0);
+            this.label8.Margin = new System.Windows.Forms.Padding(0);
+            this.label8.Name = "label8";
+            this.label8.Padding = new System.Windows.Forms.Padding(27, 0, 0, 0);
+            this.label8.Size = new System.Drawing.Size(1022, 40);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Lịch Sử";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1121,15 +1121,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
-            this.flowLayoutPanel3.ResumeLayout(false);
+            this.FlistKM.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.flowLayoutPanel2.ResumeLayout(false);
+            this.FlistNoiBat.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
+            this.FlistDT.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            this.flowLayoutPanel4.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
-            this.flowLayoutPanel5.ResumeLayout(false);
+            this.FlistLK.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
@@ -1155,7 +1155,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.FlowLayoutPanel FlistNoiBat;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label5;
@@ -1164,7 +1164,7 @@
         private ChiTietSanPham_1 chiTietSanPham_13;
         private ChiTietSanPham_1 chiTietSanPham_14;
         private ChiTietSanPham_1 chiTietSanPham_15;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel FlistKM;
         private ChiTietSanPham_1 chiTietSanPham_16;
         private ChiTietSanPham_1 chiTietSanPham_17;
         private ChiTietSanPham_1 chiTietSanPham_18;
@@ -1177,7 +1177,7 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.FlowLayoutPanel FlistDT;
         private ChiTietSanPham_1 chiTietSanPham_111;
         private ChiTietSanPham_1 chiTietSanPham_112;
         private ChiTietSanPham_1 chiTietSanPham_113;
@@ -1191,7 +1191,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel5;
+        private System.Windows.Forms.FlowLayoutPanel FlistLK;
         private ChiTietSanPham_1 chiTietSanPham_121;
         private ChiTietSanPham_1 chiTietSanPham_122;
         private ChiTietSanPham_1 chiTietSanPham_123;

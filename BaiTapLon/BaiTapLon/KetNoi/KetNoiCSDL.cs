@@ -9,20 +9,33 @@ using System.Data;
 
 namespace BaiTapLon.KetNoi
 {
-    public abstract class KetNoiCSDL
+    public  class KetNoiCSDL
     {
-        public static string getStringConnection() {
+        public  string getStringConnection() {
            
-            string folderName = "stringConnection/stringConnection.dat"; 
+            string folderName = "/stringConnection/stringConnection.dat"; 
             DirectoryInfo pathEXE = new DirectoryInfo(Directory.GetCurrentDirectory());// Directory.GetCurrentDirectory();
+              
+           
             //Chon duong dan ben ngoai thu muc github
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < 5; i++)
                 pathEXE = pathEXE.Parent;
-            return pathEXE.FullName + folderName;
+            if (File.Exists(pathEXE.FullName + folderName))
+            {
+                string stringConnect;
+                stringConnect = File.ReadAllText(pathEXE.FullName + folderName);
+                //   System.Windows.Forms.MessageBox.Show("String Connect: "+stringConnect); ;
+                return stringConnect;
+            }
+            else
+            {
+                System.Windows.Forms.MessageBox.Show("File ko ton tai: "+ pathEXE.FullName + folderName);
+            }
+            return "";
         }
 
         //================= KET NOI CSDL ==================\\
-        public static SqlConnection ketNoi() {
+        public  SqlConnection ketNoi() {
             SqlConnection conn = null;
             string stringConn = getStringConnection();
             try
@@ -40,7 +53,8 @@ namespace BaiTapLon.KetNoi
             SqlConnection conn = ketNoi();
             conn.Open();
             SqlDataAdapter sqlDataAdapter = null;
-            DataTable dataTable = null;
+            DataTable dataTable = new DataTable();
+
             try
             {
                 sqlDataAdapter = new SqlDataAdapter(query, conn);
@@ -72,9 +86,9 @@ namespace BaiTapLon.KetNoi
         }
 
         // ================ OVERRIED FUNCTION ====================\\
-        abstract public void Them(object e);
-        abstract public void Xoa(string id);
-        abstract public void Update(object e);
+        virtual public void Them(object e) { }
+        virtual public void Xoa(string id) { }
+        virtual public void Update(object e) { }
       //  abstract public List<Object> layDS();
    //    abstract  public Object getElement(string id);
     }

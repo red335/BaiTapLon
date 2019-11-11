@@ -65,6 +65,7 @@ namespace BaiTapLon.KetNoi
                 string ten = row[1].ToString();
                 int tonKho = Convert.ToInt32(row[2]);
                 int gia = Convert.ToInt32(row[3]);
+
                 int giaBan = Convert.ToInt32(row[4]);
                 string loai = row[5].ToString();
                 string hinhAnh = row[6].ToString();

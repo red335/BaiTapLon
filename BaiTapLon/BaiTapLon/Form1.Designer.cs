@@ -31,13 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pnHeader = new System.Windows.Forms.Panel();
             this.pbMinimum = new System.Windows.Forms.PictureBox();
-            this.header_Form1 = new BaiTapLon.GiaoDien.MuaBan.Header_Form();
             this.btnExit = new System.Windows.Forms.Button();
             this.Body = new System.Windows.Forms.Panel();
-            this.muaBan_Form1 = new BaiTapLon.GiaoDien.MuaBan.MuaBan_Form();
+            this.header_Form1 = new BaiTapLon.GiaoDien.MuaBan.Header_Form();
             this.pnHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimum)).BeginInit();
-            this.Body.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnHeader
@@ -50,7 +48,7 @@
             this.pnHeader.Location = new System.Drawing.Point(0, 0);
             this.pnHeader.Margin = new System.Windows.Forms.Padding(0);
             this.pnHeader.Name = "pnHeader";
-            this.pnHeader.Size = new System.Drawing.Size(1143, 51);
+            this.pnHeader.Size = new System.Drawing.Size(1143, 71);
             this.pnHeader.TabIndex = 0;
             // 
             // pbMinimum
@@ -63,15 +61,6 @@
             this.pbMinimum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbMinimum.TabIndex = 2;
             this.pbMinimum.TabStop = false;
-            // 
-            // header_Form1
-            // 
-            this.header_Form1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.header_Form1.Location = new System.Drawing.Point(0, 0);
-            this.header_Form1.Margin = new System.Windows.Forms.Padding(0);
-            this.header_Form1.Name = "header_Form1";
-            this.header_Form1.Size = new System.Drawing.Size(1032, 51);
-            this.header_Form1.TabIndex = 1;
             // 
             // btnExit
             // 
@@ -91,22 +80,21 @@
             // Body
             // 
             this.Body.BackColor = System.Drawing.Color.White;
-            this.Body.Controls.Add(this.muaBan_Form1);
             this.Body.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Body.Location = new System.Drawing.Point(0, 51);
+            this.Body.Location = new System.Drawing.Point(0, 71);
             this.Body.Margin = new System.Windows.Forms.Padding(0);
             this.Body.Name = "Body";
-            this.Body.Size = new System.Drawing.Size(1143, 687);
+            this.Body.Size = new System.Drawing.Size(1143, 667);
             this.Body.TabIndex = 2;
             // 
-            // muaBan_Form1
+            // header_Form1
             // 
-            this.muaBan_Form1.BackColor = System.Drawing.Color.White;
-            this.muaBan_Form1.Location = new System.Drawing.Point(0, 0);
-            this.muaBan_Form1.Margin = new System.Windows.Forms.Padding(0);
-            this.muaBan_Form1.Name = "muaBan_Form1";
-            this.muaBan_Form1.Size = new System.Drawing.Size(1137, 634);
-            this.muaBan_Form1.TabIndex = 0;
+            this.header_Form1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.header_Form1.Location = new System.Drawing.Point(0, 0);
+            this.header_Form1.Margin = new System.Windows.Forms.Padding(0);
+            this.header_Form1.Name = "header_Form1";
+            this.header_Form1.Size = new System.Drawing.Size(1032, 71);
+            this.header_Form1.TabIndex = 1;
             // 
             // Form1
             // 
@@ -122,7 +110,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.pnHeader.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimum)).EndInit();
-            this.Body.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -134,7 +121,6 @@
         private System.Windows.Forms.Panel Body;
         private GiaoDien.MuaBan.Header_Form header_Form1;
         private System.Windows.Forms.PictureBox pbMinimum;
-        private GiaoDien.MuaBan.MuaBan_Form muaBan_Form1;
     }
 }
 

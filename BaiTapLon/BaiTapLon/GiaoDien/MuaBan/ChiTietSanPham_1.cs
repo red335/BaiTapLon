@@ -16,11 +16,19 @@ namespace BaiTapLon.GiaoDien.MuaBan
         public ChiTietSanPham_1()
         {
             InitializeComponent();
+         //   Load();
         }
         public ChiTietSanPham_1(SanPham sanPham)
         {
             InitializeComponent();
             this.sanPham = sanPham;
+            Load();
+        }
+        private void Load() {
+            pbAnh.Image = Image.FromFile(sanPham.DuongDanHinhAnh);
+            lbTen.Text = sanPham.TenSP;
+            lbGiaBan.Text = (sanPham.GiaBan*1000) .ToString("#,###") + " VND";
+        
         }
     }
 }
