@@ -18,7 +18,7 @@ namespace BaiTapLon.Model
         private string duongDanHinhAnh;
         private string chiTiet;
         private HangSX hangSanXuat;
-
+        private Rate rating; 
         public string MaSP { get => maSP; set => maSP = value; }
         public string TenSP { get => tenSP; set => tenSP = value; }
         public int TonKho { get => tonKho; set => tonKho = value; }
@@ -28,6 +28,7 @@ namespace BaiTapLon.Model
         public string ChiTiet { get => chiTiet; set => chiTiet = value; }
         public LoaiSanPham Loai { get => loai; set => loai = value; }
         public HangSX HangSanXuat { get => hangSanXuat; set => hangSanXuat = value; }
+        internal Rate Rating { get => rating; set => rating = value; }
 
         public SanPham()
         {

@@ -52,6 +52,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\Dialog\ChiTietSanPham_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\Dialog\ChiTietSanPham_2.Designer.cs">
+      <DependentUpon>ChiTietSanPham_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\Dialog\DangBinhLuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\Dialog\DangBinhLuan.Designer.cs">
+      <DependentUpon>DangBinhLuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\Dialog\KhungBInhLuan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\Dialog\KhungBInhLuan.Designer.cs">
+      <DependentUpon>KhungBInhLuan.cs</DependentUpon>
+    </Compile>
     <Compile Include="GiaoDien\MuaBan\ChiTietSanPham_1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -82,15 +100,30 @@
     <Compile Include="GiaoDien\MuaBan\SanPham_Form.Designer.cs">
       <DependentUpon>SanPham_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="HoTro\TatCaDelegate.cs" />
+    <Compile Include="KetNoi\BinhLuanDAO.cs" />
     <Compile Include="KetNoi\HangSXDAO.cs" />
     <Compile Include="KetNoi\KetNoiCSDL.cs" />
     <Compile Include="KetNoi\SanPhamDAO.cs" />
+    <Compile Include="KetNoi\TaiKhoanDAO.cs" />
+    <Compile Include="Model\BinhLuan.cs" />
     <Compile Include="Model\HangSX.cs" />
+    <Compile Include="Model\Rate.cs" />
     <Compile Include="Model\SanPham.cs" />
+    <Compile Include="Model\TaiKhoan.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\Dialog\ChiTietSanPham_2.resx">
+      <DependentUpon>ChiTietSanPham_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\Dialog\DangBinhLuan.resx">
+      <DependentUpon>DangBinhLuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\Dialog\KhungBInhLuan.resx">
+      <DependentUpon>KhungBInhLuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\MuaBan\ChiTietSanPham_1.resx">
       <DependentUpon>ChiTietSanPham_1.cs</DependentUpon>

@@ -12,3 +12,5 @@ D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.Gia
 D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1.resources
 D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.MuaBan.Home.resources
 D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.MuaBan.SanPham_Form.resources
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.Dialog.KhungBInhLuan.resources
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.Dialog.DangBinhLuan.resources

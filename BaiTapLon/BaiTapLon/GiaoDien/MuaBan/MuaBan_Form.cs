@@ -16,6 +16,8 @@ namespace BaiTapLon.GiaoDien.MuaBan
         private Size defautlSize = new Size(885, 499);
         private Color selectedColor = Color.FromArgb(0, 115, 230);
         private Panel selectedMenu = null;
+     //   public enum KieuFormMuaBan { FORM_HOME, FORM_SANPHAM };
+        
         #endregion
         public MuaBan_Form(Size parentSize)
         {
@@ -23,7 +25,7 @@ namespace BaiTapLon.GiaoDien.MuaBan
             this.Size = parentSize;
             this.Location = new Point(0, 0);
             LoadEvent();
-            pnBody.Controls.Add(new SanPham_Form());
+            AddUseControls(new Home(AddUseControls));
         }
         public MuaBan_Form()
         {
@@ -31,7 +33,12 @@ namespace BaiTapLon.GiaoDien.MuaBan
             this.Size = defautlSize;
             this.Location = new Point(0, 0);
             LoadEvent();
-            pnBody.Controls.Add(new Home());
+            AddUseControls(new Home(AddUseControls));
+        }
+
+        private void AddUseControls(UserControl userControl) {
+            pnBody.Controls.Clear();
+            pnBody.Controls.Add(userControl);
         }
 
         // ======================  SU KIEN NHAN NUT BUTON =================\\

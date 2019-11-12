@@ -29,17 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SanPham_Form));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pbAnhSanPham = new System.Windows.Forms.PictureBox();
+            this.lbTenSP = new System.Windows.Forms.Label();
+            this.lbRate_1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lbHangSX = new System.Windows.Forms.Label();
+            this.lbTonKho = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label17 = new System.Windows.Forms.Label();
@@ -47,12 +42,17 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.lbKhuyenMai = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lbGiaBan = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.pbStar_5 = new System.Windows.Forms.PictureBox();
+            this.pbStar_4 = new System.Windows.Forms.PictureBox();
+            this.pbStar_3 = new System.Windows.Forms.PictureBox();
+            this.pbStar_2 = new System.Windows.Forms.PictureBox();
+            this.pbStar_1 = new System.Windows.Forms.PictureBox();
+            this.lbSoLuongRating = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label22 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -88,80 +88,65 @@
             this.label30 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label34 = new System.Windows.Forms.Label();
+            this.lbHienThiKM = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
+            this.FlistChiTiet = new System.Windows.Forms.FlowLayoutPanel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label36 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.label45 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.pbStar_10 = new System.Windows.Forms.PictureBox();
+            this.pbStar_9 = new System.Windows.Forms.PictureBox();
+            this.pbStar_8 = new System.Windows.Forms.PictureBox();
+            this.pbStar_7 = new System.Windows.Forms.PictureBox();
+            this.pbStar_6 = new System.Windows.Forms.PictureBox();
+            this.lbSLNhanXet = new System.Windows.Forms.Label();
+            this.lbSoLuongRating_2 = new System.Windows.Forms.Label();
+            this.FlistBinhLuan = new System.Windows.Forms.FlowLayoutPanel();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.pictureBox24 = new System.Windows.Forms.PictureBox();
+            this.pictureBox23 = new System.Windows.Forms.PictureBox();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.pictureBox18 = new System.Windows.Forms.PictureBox();
+            this.pictureBox19 = new System.Windows.Forms.PictureBox();
+            this.pictureBox20 = new System.Windows.Forms.PictureBox();
+            this.pictureBox21 = new System.Windows.Forms.PictureBox();
+            this.pictureBox22 = new System.Windows.Forms.PictureBox();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.pictureBox17 = new System.Windows.Forms.PictureBox();
+            this.cbbComment_Sao = new System.Windows.Forms.ComboBox();
+            this.cbbComment_LoaiKhach = new System.Windows.Forms.ComboBox();
+            this.cbbComment_ThoiGian = new System.Windows.Forms.ComboBox();
+            this.label60 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
             this.button12 = new System.Windows.Forms.Button();
             this.label59 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
+            this.lbFiveStar = new System.Windows.Forms.Label();
+            this.lbFourStar = new System.Windows.Forms.Label();
+            this.lbThreeStar = new System.Windows.Forms.Label();
+            this.lbTowStar = new System.Windows.Forms.Label();
+            this.lbOneStar = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
-            this.pictureBox16 = new System.Windows.Forms.PictureBox();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.pictureBox13 = new System.Windows.Forms.PictureBox();
-            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.label48 = new System.Windows.Forms.Label();
+            this.lbRate_2 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.cbbComment_ThoiGian = new System.Windows.Forms.ComboBox();
-            this.cbbComment_LoaiKhach = new System.Windows.Forms.ComboBox();
-            this.cbbComment_Sao = new System.Windows.Forms.ComboBox();
-            this.flowLayoutPanel4 = new System.Windows.Forms.FlowLayoutPanel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.pictureBox17 = new System.Windows.Forms.PictureBox();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.pictureBox18 = new System.Windows.Forms.PictureBox();
-            this.pictureBox19 = new System.Windows.Forms.PictureBox();
-            this.pictureBox20 = new System.Windows.Forms.PictureBox();
-            this.pictureBox21 = new System.Windows.Forms.PictureBox();
-            this.pictureBox22 = new System.Windows.Forms.PictureBox();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.pictureBox23 = new System.Windows.Forms.PictureBox();
-            this.pictureBox24 = new System.Windows.Forms.PictureBox();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.button10 = new System.Windows.Forms.Button();
@@ -182,132 +167,78 @@
             this.chiTietSanPham_12 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_13 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
             this.chiTietSanPham_14 = new BaiTapLon.GiaoDien.MuaBan.ChiTietSanPham_1();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAnhSanPham)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_1)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.flowLayoutPanel2.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.flowLayoutPanel3.SuspendLayout();
+            this.FlistChiTiet.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel13.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.flowLayoutPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_6)).BeginInit();
+            this.FlistBinhLuan.SuspendLayout();
             this.panel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel27.SuspendLayout();
             this.flowLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // pbAnhSanPham
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(39, 111);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(363, 347);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pbAnhSanPham.Image = ((System.Drawing.Image)(resources.GetObject("pbAnhSanPham.Image")));
+            this.pbAnhSanPham.Location = new System.Drawing.Point(39, 111);
+            this.pbAnhSanPham.Name = "pbAnhSanPham";
+            this.pbAnhSanPham.Size = new System.Drawing.Size(363, 347);
+            this.pbAnhSanPham.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAnhSanPham.TabIndex = 0;
+            this.pbAnhSanPham.TabStop = false;
             // 
-            // label1
+            // lbTenSP
             // 
-            this.label1.Font = new System.Drawing.Font("UTM Helve", 13.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(23, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(522, 23);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Điện Thoại Samsung Galaxy S+";
+            this.lbTenSP.Font = new System.Drawing.Font("UTM Helve", 13.4F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTenSP.ForeColor = System.Drawing.Color.Black;
+            this.lbTenSP.Location = new System.Drawing.Point(23, 16);
+            this.lbTenSP.Name = "lbTenSP";
+            this.lbTenSP.Size = new System.Drawing.Size(522, 31);
+            this.lbTenSP.TabIndex = 1;
+            this.lbTenSP.Text = "Điện Thoại Samsung Galaxy S+";
             // 
-            // label2
+            // lbRate_1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font(".VnTime", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(22, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 22);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "4.5/5";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(25, 72);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(22, 21);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(128, 72);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(22, 21);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 9;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(103, 72);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(22, 21);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 10;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(77, 72);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(22, 21);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 12;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(51, 72);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(22, 21);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 13;
-            this.pictureBox7.TabStop = false;
+            this.lbRate_1.AutoSize = true;
+            this.lbRate_1.Font = new System.Drawing.Font(".VnTime", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRate_1.ForeColor = System.Drawing.Color.Red;
+            this.lbRate_1.Location = new System.Drawing.Point(22, 47);
+            this.lbRate_1.Name = "lbRate_1";
+            this.lbRate_1.Size = new System.Drawing.Size(51, 22);
+            this.lbRate_1.TabIndex = 2;
+            this.lbRate_1.Text = "4.5/5";
             // 
             // label3
             // 
@@ -319,27 +250,27 @@
             this.label3.TabIndex = 14;
             this.label3.Text = "Hãng Sản Xuất:";
             // 
-            // label4
+            // lbHangSX
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(110, 100);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 18);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "Samsung";
+            this.lbHangSX.AutoSize = true;
+            this.lbHangSX.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHangSX.ForeColor = System.Drawing.Color.Blue;
+            this.lbHangSX.Location = new System.Drawing.Point(110, 100);
+            this.lbHangSX.Name = "lbHangSX";
+            this.lbHangSX.Size = new System.Drawing.Size(63, 18);
+            this.lbHangSX.TabIndex = 15;
+            this.lbHangSX.Text = "Samsung";
             // 
-            // label5
+            // lbTonKho
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Blue;
-            this.label5.Location = new System.Drawing.Point(344, 100);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(31, 18);
-            this.label5.TabIndex = 17;
-            this.label5.Text = "Còn";
+            this.lbTonKho.AutoSize = true;
+            this.lbTonKho.Font = new System.Drawing.Font("Arial Unicode MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTonKho.ForeColor = System.Drawing.Color.Blue;
+            this.lbTonKho.Location = new System.Drawing.Point(344, 100);
+            this.lbTonKho.Name = "lbTonKho";
+            this.lbTonKho.Size = new System.Drawing.Size(31, 18);
+            this.lbTonKho.TabIndex = 17;
+            this.lbTonKho.Text = "Còn";
             // 
             // label6
             // 
@@ -358,10 +289,10 @@
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.lbKhuyenMai);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.lbGiaBan);
             this.groupBox1.Location = new System.Drawing.Point(427, 225);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(305, 233);
@@ -424,16 +355,16 @@
             this.label14.Text = "Chấp nhận 1 đổi 1 cho các sản phẩm bị lỗi khi tiến hành mua online.";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label10
+            // lbKhuyenMai
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Red;
-            this.label10.Location = new System.Drawing.Point(106, 37);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(60, 16);
-            this.label10.TabIndex = 23;
-            this.label10.Text = "-20 % ";
+            this.lbKhuyenMai.AutoSize = true;
+            this.lbKhuyenMai.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbKhuyenMai.ForeColor = System.Drawing.Color.Red;
+            this.lbKhuyenMai.Location = new System.Drawing.Point(106, 37);
+            this.lbKhuyenMai.Name = "lbKhuyenMai";
+            this.lbKhuyenMai.Size = new System.Drawing.Size(60, 16);
+            this.lbKhuyenMai.TabIndex = 23;
+            this.lbKhuyenMai.Text = "-20 % ";
             // 
             // label11
             // 
@@ -457,45 +388,95 @@
             this.label9.TabIndex = 20;
             this.label9.Text = "Giá Bán:";
             // 
-            // label7
+            // lbGiaBan
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Red;
-            this.label7.Location = new System.Drawing.Point(107, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(128, 16);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "20.000.000 VND";
+            this.lbGiaBan.AutoSize = true;
+            this.lbGiaBan.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGiaBan.ForeColor = System.Drawing.Color.Red;
+            this.lbGiaBan.Location = new System.Drawing.Point(107, 13);
+            this.lbGiaBan.Name = "lbGiaBan";
+            this.lbGiaBan.Size = new System.Drawing.Size(128, 16);
+            this.lbGiaBan.TabIndex = 19;
+            this.lbGiaBan.Text = "20.000.000 VND";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.pictureBox2);
+            this.groupBox2.Controls.Add(this.pbStar_5);
+            this.groupBox2.Controls.Add(this.pbStar_4);
+            this.groupBox2.Controls.Add(this.pbStar_3);
+            this.groupBox2.Controls.Add(this.pbStar_2);
+            this.groupBox2.Controls.Add(this.pbStar_1);
+            this.groupBox2.Controls.Add(this.lbSoLuongRating);
+            this.groupBox2.Controls.Add(this.lbTenSP);
+            this.groupBox2.Controls.Add(this.lbRate_1);
+            this.groupBox2.Controls.Add(this.lbTonKho);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.pictureBox3);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.pictureBox4);
+            this.groupBox2.Controls.Add(this.lbHangSX);
             this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.pictureBox6);
-            this.groupBox2.Controls.Add(this.pictureBox7);
             this.groupBox2.Location = new System.Drawing.Point(426, 105);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(562, 121);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             // 
-            // label12
+            // pbStar_5
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(157, 79);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(75, 13);
-            this.label12.TabIndex = 18;
-            this.label12.Text = "(12.000 người)";
+            this.pbStar_5.Image = ((System.Drawing.Image)(resources.GetObject("pbStar_5.Image")));
+            this.pbStar_5.Location = new System.Drawing.Point(124, 69);
+            this.pbStar_5.Name = "pbStar_5";
+            this.pbStar_5.Size = new System.Drawing.Size(22, 24);
+            this.pbStar_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbStar_5.TabIndex = 23;
+            this.pbStar_5.TabStop = false;
+            // 
+            // pbStar_4
+            // 
+            this.pbStar_4.Image = ((System.Drawing.Image)(resources.GetObject("pbStar_4.Image")));
+            this.pbStar_4.Location = new System.Drawing.Point(99, 69);
+            this.pbStar_4.Name = "pbStar_4";
+            this.pbStar_4.Size = new System.Drawing.Size(22, 24);
+            this.pbStar_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbStar_4.TabIndex = 22;
+            this.pbStar_4.TabStop = false;
+            // 
+            // pbStar_3
+            // 
+            this.pbStar_3.Image = ((System.Drawing.Image)(resources.GetObject("pbStar_3.Image")));
+            this.pbStar_3.Location = new System.Drawing.Point(75, 69);
+            this.pbStar_3.Name = "pbStar_3";
+            this.pbStar_3.Size = new System.Drawing.Size(22, 24);
+            this.pbStar_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbStar_3.TabIndex = 21;
+            this.pbStar_3.TabStop = false;
+            // 
+            // pbStar_2
+            // 
+            this.pbStar_2.Image = ((System.Drawing.Image)(resources.GetObject("pbStar_2.Image")));
+            this.pbStar_2.Location = new System.Drawing.Point(50, 69);
+            this.pbStar_2.Name = "pbStar_2";
+            this.pbStar_2.Size = new System.Drawing.Size(22, 24);
+            this.pbStar_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbStar_2.TabIndex = 20;
+            this.pbStar_2.TabStop = false;
+            // 
+            // pbStar_1
+            // 
+            this.pbStar_1.Image = ((System.Drawing.Image)(resources.GetObject("pbStar_1.Image")));
+            this.pbStar_1.Location = new System.Drawing.Point(25, 69);
+            this.pbStar_1.Name = "pbStar_1";
+            this.pbStar_1.Size = new System.Drawing.Size(22, 24);
+            this.pbStar_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbStar_1.TabIndex = 19;
+            this.pbStar_1.TabStop = false;
+            // 
+            // lbSoLuongRating
+            // 
+            this.lbSoLuongRating.AutoSize = true;
+            this.lbSoLuongRating.Location = new System.Drawing.Point(152, 80);
+            this.lbSoLuongRating.Name = "lbSoLuongRating";
+            this.lbSoLuongRating.Size = new System.Drawing.Size(75, 13);
+            this.lbSoLuongRating.TabIndex = 18;
+            this.lbSoLuongRating.Text = "(12.000 người)";
             // 
             // groupBox3
             // 
@@ -621,6 +602,7 @@
             // 
             // button1
             // 
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Location = new System.Drawing.Point(9, 26);
             this.button1.Name = "button1";
@@ -631,6 +613,7 @@
             // 
             // button2
             // 
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Location = new System.Drawing.Point(70, 26);
             this.button2.Name = "button2";
@@ -905,50 +888,43 @@
             this.panel4.Size = new System.Drawing.Size(1004, 1);
             this.panel4.TabIndex = 42;
             // 
-            // label34
+            // lbHienThiKM
             // 
-            this.label34.AutoSize = true;
-            this.label34.BackColor = System.Drawing.Color.Red;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.White;
-            this.label34.Location = new System.Drawing.Point(347, 111);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(55, 24);
-            this.label34.TabIndex = 43;
-            this.label34.Text = "-20%";
-            this.label34.Visible = false;
+            this.lbHienThiKM.AutoSize = true;
+            this.lbHienThiKM.BackColor = System.Drawing.Color.Red;
+            this.lbHienThiKM.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHienThiKM.ForeColor = System.Drawing.Color.White;
+            this.lbHienThiKM.Location = new System.Drawing.Point(347, 111);
+            this.lbHienThiKM.Name = "lbHienThiKM";
+            this.lbHienThiKM.Size = new System.Drawing.Size(55, 24);
+            this.lbHienThiKM.TabIndex = 43;
+            this.lbHienThiKM.Text = "-20%";
+            this.lbHienThiKM.Visible = false;
             // 
             // groupBox5
             // 
             this.groupBox5.AutoSize = true;
-            this.groupBox5.Controls.Add(this.flowLayoutPanel3);
+            this.groupBox5.Controls.Add(this.FlistChiTiet);
             this.groupBox5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(42, 940);
+            this.groupBox5.MinimumSize = new System.Drawing.Size(832, 115);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(832, 284);
+            this.groupBox5.Size = new System.Drawing.Size(832, 115);
             this.groupBox5.TabIndex = 44;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "CHI TIẾT SẢN PHẨM";
             // 
-            // flowLayoutPanel3
+            // FlistChiTiet
             // 
-            this.flowLayoutPanel3.AutoSize = true;
-            this.flowLayoutPanel3.Controls.Add(this.panel6);
-            this.flowLayoutPanel3.Controls.Add(this.panel5);
-            this.flowLayoutPanel3.Controls.Add(this.panel7);
-            this.flowLayoutPanel3.Controls.Add(this.panel8);
-            this.flowLayoutPanel3.Controls.Add(this.panel9);
-            this.flowLayoutPanel3.Controls.Add(this.panel10);
-            this.flowLayoutPanel3.Controls.Add(this.panel11);
-            this.flowLayoutPanel3.Controls.Add(this.panel12);
-            this.flowLayoutPanel3.Controls.Add(this.panel13);
-            this.flowLayoutPanel3.Controls.Add(this.panel14);
-            this.flowLayoutPanel3.Controls.Add(this.label45);
-            this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(12, 25);
-            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(812, 234);
-            this.flowLayoutPanel3.TabIndex = 0;
+            this.FlistChiTiet.AutoSize = true;
+            this.FlistChiTiet.Controls.Add(this.panel6);
+            this.FlistChiTiet.Controls.Add(this.panel5);
+            this.FlistChiTiet.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.FlistChiTiet.Location = new System.Drawing.Point(12, 25);
+            this.FlistChiTiet.MinimumSize = new System.Drawing.Size(812, 65);
+            this.FlistChiTiet.Name = "FlistChiTiet";
+            this.FlistChiTiet.Size = new System.Drawing.Size(812, 65);
+            this.FlistChiTiet.TabIndex = 0;
             // 
             // panel6
             // 
@@ -960,6 +936,7 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(586, 33);
             this.panel6.TabIndex = 44;
+            this.panel6.Visible = false;
             // 
             // label36
             // 
@@ -989,178 +966,17 @@
             this.panel5.Size = new System.Drawing.Size(604, 1);
             this.panel5.TabIndex = 45;
             // 
-            // panel7
-            // 
-            this.panel7.AutoScroll = true;
-            this.panel7.Controls.Add(this.label37);
-            this.panel7.Controls.Add(this.label38);
-            this.panel7.Location = new System.Drawing.Point(3, 48);
-            this.panel7.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(586, 33);
-            this.panel7.TabIndex = 46;
-            // 
-            // label37
-            // 
-            this.label37.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label37.Location = new System.Drawing.Point(225, 7);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(349, 17);
-            this.label37.TabIndex = 1;
-            this.label37.Text = "32Gb";
-            // 
-            // label38
-            // 
-            this.label38.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(3, 7);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(216, 17);
-            this.label38.TabIndex = 0;
-            this.label38.Text = "ROM";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.LightGray;
-            this.panel8.Location = new System.Drawing.Point(0, 81);
-            this.panel8.Margin = new System.Windows.Forms.Padding(0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(604, 1);
-            this.panel8.TabIndex = 47;
-            // 
-            // panel9
-            // 
-            this.panel9.AutoScroll = true;
-            this.panel9.Controls.Add(this.label39);
-            this.panel9.Controls.Add(this.label40);
-            this.panel9.Location = new System.Drawing.Point(3, 89);
-            this.panel9.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(586, 33);
-            this.panel9.TabIndex = 48;
-            // 
-            // label39
-            // 
-            this.label39.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label39.Location = new System.Drawing.Point(225, 7);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(349, 17);
-            this.label39.TabIndex = 1;
-            this.label39.Text = "4Gb";
-            // 
-            // label40
-            // 
-            this.label40.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(3, 7);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(216, 17);
-            this.label40.TabIndex = 0;
-            this.label40.Text = "RAM";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.LightGray;
-            this.panel10.Location = new System.Drawing.Point(0, 122);
-            this.panel10.Margin = new System.Windows.Forms.Padding(0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(604, 1);
-            this.panel10.TabIndex = 49;
-            // 
-            // panel11
-            // 
-            this.panel11.AutoScroll = true;
-            this.panel11.Controls.Add(this.label41);
-            this.panel11.Controls.Add(this.label42);
-            this.panel11.Location = new System.Drawing.Point(3, 130);
-            this.panel11.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(586, 33);
-            this.panel11.TabIndex = 50;
-            // 
-            // label41
-            // 
-            this.label41.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label41.Location = new System.Drawing.Point(225, 7);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(349, 17);
-            this.label41.TabIndex = 1;
-            this.label41.Text = "5 inch";
-            // 
-            // label42
-            // 
-            this.label42.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(3, 7);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(216, 17);
-            this.label42.TabIndex = 0;
-            this.label42.Text = "MÀNG HÌNH";
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.LightGray;
-            this.panel12.Location = new System.Drawing.Point(0, 163);
-            this.panel12.Margin = new System.Windows.Forms.Padding(0);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(604, 1);
-            this.panel12.TabIndex = 51;
-            // 
-            // panel13
-            // 
-            this.panel13.AutoScroll = true;
-            this.panel13.Controls.Add(this.label43);
-            this.panel13.Controls.Add(this.label44);
-            this.panel13.Location = new System.Drawing.Point(3, 171);
-            this.panel13.Margin = new System.Windows.Forms.Padding(3, 7, 3, 0);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(586, 33);
-            this.panel13.TabIndex = 52;
-            // 
-            // label43
-            // 
-            this.label43.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label43.Location = new System.Drawing.Point(225, 7);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(349, 17);
-            this.label43.TabIndex = 1;
-            this.label43.Text = "189 g";
-            // 
-            // label44
-            // 
-            this.label44.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(3, 7);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(216, 17);
-            this.label44.TabIndex = 0;
-            this.label44.Text = "Cân nặng";
-            // 
-            // panel14
-            // 
-            this.panel14.BackColor = System.Drawing.Color.LightGray;
-            this.panel14.Location = new System.Drawing.Point(0, 204);
-            this.panel14.Margin = new System.Windows.Forms.Padding(0);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(604, 1);
-            this.panel14.TabIndex = 53;
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Arial", 9.7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.Green;
-            this.label45.Location = new System.Drawing.Point(254, 210);
-            this.label45.Margin = new System.Windows.Forms.Padding(254, 5, 3, 0);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(76, 16);
-            this.label45.TabIndex = 54;
-            this.label45.Text = "XEM THÊM";
-            // 
             // groupBox6
             // 
             this.groupBox6.AutoSize = true;
-            this.groupBox6.Controls.Add(this.flowLayoutPanel4);
+            this.groupBox6.Controls.Add(this.pbStar_10);
+            this.groupBox6.Controls.Add(this.pbStar_9);
+            this.groupBox6.Controls.Add(this.pbStar_8);
+            this.groupBox6.Controls.Add(this.pbStar_7);
+            this.groupBox6.Controls.Add(this.pbStar_6);
+            this.groupBox6.Controls.Add(this.lbSLNhanXet);
+            this.groupBox6.Controls.Add(this.lbSoLuongRating_2);
+            this.groupBox6.Controls.Add(this.FlistBinhLuan);
             this.groupBox6.Controls.Add(this.cbbComment_Sao);
             this.groupBox6.Controls.Add(this.cbbComment_LoaiKhach);
             this.groupBox6.Controls.Add(this.cbbComment_ThoiGian);
@@ -1168,28 +984,23 @@
             this.groupBox6.Controls.Add(this.panel16);
             this.groupBox6.Controls.Add(this.button12);
             this.groupBox6.Controls.Add(this.label59);
-            this.groupBox6.Controls.Add(this.label58);
-            this.groupBox6.Controls.Add(this.label57);
-            this.groupBox6.Controls.Add(this.label56);
-            this.groupBox6.Controls.Add(this.label55);
-            this.groupBox6.Controls.Add(this.label54);
+            this.groupBox6.Controls.Add(this.lbFiveStar);
+            this.groupBox6.Controls.Add(this.lbFourStar);
+            this.groupBox6.Controls.Add(this.lbThreeStar);
+            this.groupBox6.Controls.Add(this.lbTowStar);
+            this.groupBox6.Controls.Add(this.lbOneStar);
             this.groupBox6.Controls.Add(this.label53);
             this.groupBox6.Controls.Add(this.label52);
             this.groupBox6.Controls.Add(this.label51);
             this.groupBox6.Controls.Add(this.label50);
             this.groupBox6.Controls.Add(this.label49);
-            this.groupBox6.Controls.Add(this.pictureBox16);
-            this.groupBox6.Controls.Add(this.pictureBox15);
-            this.groupBox6.Controls.Add(this.pictureBox14);
-            this.groupBox6.Controls.Add(this.pictureBox13);
-            this.groupBox6.Controls.Add(this.pictureBox12);
             this.groupBox6.Controls.Add(this.pictureBox11);
             this.groupBox6.Controls.Add(this.pictureBox9);
             this.groupBox6.Controls.Add(this.pictureBox10);
             this.groupBox6.Controls.Add(this.pictureBox8);
             this.groupBox6.Controls.Add(this.pictureBox5);
             this.groupBox6.Controls.Add(this.panel15);
-            this.groupBox6.Controls.Add(this.label48);
+            this.groupBox6.Controls.Add(this.lbRate_2);
             this.groupBox6.Controls.Add(this.label47);
             this.groupBox6.Controls.Add(this.label46);
             this.groupBox6.Location = new System.Drawing.Point(42, 1636);
@@ -1199,345 +1010,85 @@
             this.groupBox6.TabIndex = 45;
             this.groupBox6.TabStop = false;
             // 
-            // panel16
+            // pbStar_10
             // 
-            this.panel16.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel16.Location = new System.Drawing.Point(9, 209);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(800, 1);
-            this.panel16.TabIndex = 43;
+            this.pbStar_10.Image = ((System.Drawing.Image)(resources.GetObject("pbStar_10.Image")));
+            this.pbStar_10.Location = new System.Drawing.Point(189, 117);
+            this.pbStar_10.Name = "pbStar_10";
+            this.pbStar_10.Size = new System.Drawing.Size(22, 24);
+            this.pbStar_10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbStar_10.TabIndex = 55;
+            this.pbStar_10.TabStop = false;
             // 
-            // button12
+            // pbStar_9
             // 
-            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Location = new System.Drawing.Point(595, 98);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(182, 48);
-            this.button12.TabIndex = 26;
-            this.button12.Text = "NHẬN XÉT SẢN PHẨM";
-            this.button12.UseVisualStyleBackColor = false;
+            this.pbStar_9.Image = ((System.Drawing.Image)(resources.GetObject("pbStar_9.Image")));
+            this.pbStar_9.Location = new System.Drawing.Point(164, 117);
+            this.pbStar_9.Name = "pbStar_9";
+            this.pbStar_9.Size = new System.Drawing.Size(22, 24);
+            this.pbStar_9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbStar_9.TabIndex = 54;
+            this.pbStar_9.TabStop = false;
             // 
-            // label59
+            // pbStar_8
             // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(630, 76);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(115, 19);
-            this.label59.TabIndex = 25;
-            this.label59.Text = "Đăng Nhận Xét";
+            this.pbStar_8.Image = ((System.Drawing.Image)(resources.GetObject("pbStar_8.Image")));
+            this.pbStar_8.Location = new System.Drawing.Point(140, 117);
+            this.pbStar_8.Name = "pbStar_8";
+            this.pbStar_8.Size = new System.Drawing.Size(22, 24);
+            this.pbStar_8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbStar_8.TabIndex = 53;
+            this.pbStar_8.TabStop = false;
             // 
-            // label58
+            // pbStar_7
             // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.ForeColor = System.Drawing.Color.Green;
-            this.label58.Location = new System.Drawing.Point(346, 149);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(36, 17);
-            this.label58.TabIndex = 24;
-            this.label58.Text = "75%";
+            this.pbStar_7.Image = ((System.Drawing.Image)(resources.GetObject("pbStar_7.Image")));
+            this.pbStar_7.Location = new System.Drawing.Point(115, 117);
+            this.pbStar_7.Name = "pbStar_7";
+            this.pbStar_7.Size = new System.Drawing.Size(22, 24);
+            this.pbStar_7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbStar_7.TabIndex = 52;
+            this.pbStar_7.TabStop = false;
             // 
-            // label57
+            // pbStar_6
             // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.ForeColor = System.Drawing.Color.Green;
-            this.label57.Location = new System.Drawing.Point(346, 125);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(36, 17);
-            this.label57.TabIndex = 23;
-            this.label57.Text = "75%";
+            this.pbStar_6.Image = ((System.Drawing.Image)(resources.GetObject("pbStar_6.Image")));
+            this.pbStar_6.Location = new System.Drawing.Point(90, 117);
+            this.pbStar_6.Name = "pbStar_6";
+            this.pbStar_6.Size = new System.Drawing.Size(22, 24);
+            this.pbStar_6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbStar_6.TabIndex = 51;
+            this.pbStar_6.TabStop = false;
             // 
-            // label56
+            // lbSLNhanXet
             // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.ForeColor = System.Drawing.Color.Green;
-            this.label56.Location = new System.Drawing.Point(346, 99);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(36, 17);
-            this.label56.TabIndex = 22;
-            this.label56.Text = "75%";
+            this.lbSLNhanXet.AutoSize = true;
+            this.lbSLNhanXet.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSLNhanXet.Location = new System.Drawing.Point(18, 230);
+            this.lbSLNhanXet.Name = "lbSLNhanXet";
+            this.lbSLNhanXet.Size = new System.Drawing.Size(79, 17);
+            this.lbSLNhanXet.TabIndex = 50;
+            this.lbSLNhanXet.Text = "7 Nhận Xét";
             // 
-            // label55
+            // lbSoLuongRating_2
             // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.ForeColor = System.Drawing.Color.Green;
-            this.label55.Location = new System.Drawing.Point(346, 74);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(36, 17);
-            this.label55.TabIndex = 21;
-            this.label55.Text = "75%";
+            this.lbSoLuongRating_2.ForeColor = System.Drawing.Color.Green;
+            this.lbSoLuongRating_2.Location = new System.Drawing.Point(92, 146);
+            this.lbSoLuongRating_2.Name = "lbSoLuongRating_2";
+            this.lbSoLuongRating_2.Size = new System.Drawing.Size(123, 13);
+            this.lbSoLuongRating_2.TabIndex = 49;
+            this.lbSoLuongRating_2.Text = "(12.000 người)";
+            this.lbSoLuongRating_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label54
+            // FlistBinhLuan
             // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.ForeColor = System.Drawing.Color.Green;
-            this.label54.Location = new System.Drawing.Point(346, 51);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(36, 17);
-            this.label54.TabIndex = 20;
-            this.label54.Text = "75%";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(257, 149);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(14, 15);
-            this.label53.TabIndex = 19;
-            this.label53.Text = "5";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(257, 125);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(14, 15);
-            this.label52.TabIndex = 18;
-            this.label52.Text = "4";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(257, 99);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(14, 15);
-            this.label51.TabIndex = 17;
-            this.label51.Text = "3";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(257, 74);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(14, 15);
-            this.label50.TabIndex = 16;
-            this.label50.Text = "2";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(257, 51);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(14, 15);
-            this.label49.TabIndex = 15;
-            this.label49.Text = "1";
-            // 
-            // pictureBox16
-            // 
-            this.pictureBox16.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox16.Image")));
-            this.pictureBox16.Location = new System.Drawing.Point(42, 134);
-            this.pictureBox16.Name = "pictureBox16";
-            this.pictureBox16.Size = new System.Drawing.Size(32, 30);
-            this.pictureBox16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox16.TabIndex = 14;
-            this.pictureBox16.TabStop = false;
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox15.Image")));
-            this.pictureBox15.Location = new System.Drawing.Point(194, 134);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(32, 30);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox15.TabIndex = 13;
-            this.pictureBox15.TabStop = false;
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox14.Image")));
-            this.pictureBox14.Location = new System.Drawing.Point(156, 134);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(32, 30);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox14.TabIndex = 12;
-            this.pictureBox14.TabStop = false;
-            // 
-            // pictureBox13
-            // 
-            this.pictureBox13.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox13.Image")));
-            this.pictureBox13.Location = new System.Drawing.Point(118, 134);
-            this.pictureBox13.Name = "pictureBox13";
-            this.pictureBox13.Size = new System.Drawing.Size(32, 30);
-            this.pictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox13.TabIndex = 11;
-            this.pictureBox13.TabStop = false;
-            // 
-            // pictureBox12
-            // 
-            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-            this.pictureBox12.Location = new System.Drawing.Point(80, 134);
-            this.pictureBox12.Name = "pictureBox12";
-            this.pictureBox12.Size = new System.Drawing.Size(32, 30);
-            this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox12.TabIndex = 10;
-            this.pictureBox12.TabStop = false;
-            // 
-            // pictureBox11
-            // 
-            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-            this.pictureBox11.Location = new System.Drawing.Point(275, 146);
-            this.pictureBox11.Name = "pictureBox11";
-            this.pictureBox11.Size = new System.Drawing.Size(21, 18);
-            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox11.TabIndex = 9;
-            this.pictureBox11.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(275, 122);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(21, 18);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 8;
-            this.pictureBox9.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-            this.pictureBox10.Location = new System.Drawing.Point(275, 98);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(21, 18);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox10.TabIndex = 7;
-            this.pictureBox10.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(275, 74);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(21, 18);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 5;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(275, 51);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(21, 18);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 4;
-            this.pictureBox5.TabStop = false;
-            // 
-            // panel15
-            // 
-            this.panel15.BackColor = System.Drawing.Color.Black;
-            this.panel15.Location = new System.Drawing.Point(232, 44);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(2, 120);
-            this.panel15.TabIndex = 3;
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.Red;
-            this.label48.Location = new System.Drawing.Point(113, 77);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(92, 39);
-            this.label48.TabIndex = 2;
-            this.label48.Text = "4.5/5";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(101, 51);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(130, 19);
-            this.label47.TabIndex = 1;
-            this.label47.Text = "Điểm Trung Bình";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.Black;
-            this.label46.Location = new System.Drawing.Point(18, 16);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(161, 16);
-            this.label46.TabIndex = 0;
-            this.label46.Text = "ĐÁNH GIÁ SẢN PHẨM";
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label60.Location = new System.Drawing.Point(18, 230);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(106, 17);
-            this.label60.TabIndex = 44;
-            this.label60.Text = "Chọn nhận xét:";
-            // 
-            // cbbComment_ThoiGian
-            // 
-            this.cbbComment_ThoiGian.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbComment_ThoiGian.FormattingEnabled = true;
-            this.cbbComment_ThoiGian.Items.AddRange(new object[] {
-            "Thời gian",
-            "Mới nhất",
-            "Cũ nhất"});
-            this.cbbComment_ThoiGian.Location = new System.Drawing.Point(150, 222);
-            this.cbbComment_ThoiGian.Name = "cbbComment_ThoiGian";
-            this.cbbComment_ThoiGian.Size = new System.Drawing.Size(121, 25);
-            this.cbbComment_ThoiGian.TabIndex = 45;
-            // 
-            // cbbComment_LoaiKhach
-            // 
-            this.cbbComment_LoaiKhach.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbComment_LoaiKhach.FormattingEnabled = true;
-            this.cbbComment_LoaiKhach.Items.AddRange(new object[] {
-            "Loại khách hàng",
-            "Khách hàng Vip",
-            "Khách hàng thuyền xuyên",
-            "Khách hàng thường"});
-            this.cbbComment_LoaiKhach.Location = new System.Drawing.Point(315, 222);
-            this.cbbComment_LoaiKhach.Name = "cbbComment_LoaiKhach";
-            this.cbbComment_LoaiKhach.Size = new System.Drawing.Size(142, 25);
-            this.cbbComment_LoaiKhach.TabIndex = 46;
-            // 
-            // cbbComment_Sao
-            // 
-            this.cbbComment_Sao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbbComment_Sao.FormattingEnabled = true;
-            this.cbbComment_Sao.Items.AddRange(new object[] {
-            "Số sao",
-            "5 sao",
-            "4 sao",
-            "3 sao",
-            "2 sao",
-            "1 sao"});
-            this.cbbComment_Sao.Location = new System.Drawing.Point(499, 222);
-            this.cbbComment_Sao.Name = "cbbComment_Sao";
-            this.cbbComment_Sao.Size = new System.Drawing.Size(121, 25);
-            this.cbbComment_Sao.TabIndex = 47;
-            // 
-            // flowLayoutPanel4
-            // 
-            this.flowLayoutPanel4.AutoSize = true;
-            this.flowLayoutPanel4.Controls.Add(this.panel17);
-            this.flowLayoutPanel4.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flowLayoutPanel4.Location = new System.Drawing.Point(15, 265);
-            this.flowLayoutPanel4.Name = "flowLayoutPanel4";
-            this.flowLayoutPanel4.Size = new System.Drawing.Size(794, 167);
-            this.flowLayoutPanel4.TabIndex = 48;
+            this.FlistBinhLuan.AutoSize = true;
+            this.FlistBinhLuan.Controls.Add(this.panel17);
+            this.FlistBinhLuan.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.FlistBinhLuan.Location = new System.Drawing.Point(15, 265);
+            this.FlistBinhLuan.Name = "FlistBinhLuan";
+            this.FlistBinhLuan.Size = new System.Drawing.Size(797, 167);
+            this.FlistBinhLuan.TabIndex = 48;
             // 
             // panel17
             // 
@@ -1564,36 +1115,90 @@
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(782, 159);
             this.panel17.TabIndex = 0;
+            this.panel17.Visible = false;
             // 
-            // pictureBox17
+            // label67
             // 
-            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
-            this.pictureBox17.Location = new System.Drawing.Point(46, 29);
-            this.pictureBox17.Name = "pictureBox17";
-            this.pictureBox17.Size = new System.Drawing.Size(82, 85);
-            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox17.TabIndex = 0;
-            this.pictureBox17.TabStop = false;
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Times New Roman", 9.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.ForeColor = System.Drawing.Color.Black;
+            this.label67.Location = new System.Drawing.Point(455, 40);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(25, 15);
+            this.label67.TabIndex = 48;
+            this.label67.Text = "112";
             // 
-            // label61
+            // label66
             // 
-            this.label61.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(3, 117);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(170, 22);
-            this.label61.TabIndex = 1;
-            this.label61.Text = "Không Nhớ Tên";
-            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Times New Roman", 9.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.ForeColor = System.Drawing.Color.Black;
+            this.label66.Location = new System.Drawing.Point(380, 41);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(25, 15);
+            this.label66.TabIndex = 47;
+            this.label66.Text = "112";
             // 
-            // label62
+            // pictureBox24
             // 
-            this.label62.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.Location = new System.Drawing.Point(21, 139);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(125, 20);
-            this.label62.TabIndex = 2;
-            this.label62.Text = "Mới đây";
-            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
+            this.pictureBox24.Location = new System.Drawing.Point(432, 37);
+            this.pictureBox24.Name = "pictureBox24";
+            this.pictureBox24.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox24.TabIndex = 46;
+            this.pictureBox24.TabStop = false;
+            // 
+            // pictureBox23
+            // 
+            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
+            this.pictureBox23.Location = new System.Drawing.Point(356, 37);
+            this.pictureBox23.Name = "pictureBox23";
+            this.pictureBox23.Size = new System.Drawing.Size(20, 20);
+            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox23.TabIndex = 45;
+            this.pictureBox23.TabStop = false;
+            // 
+            // panel18
+            // 
+            this.panel18.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel18.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel18.Location = new System.Drawing.Point(0, 158);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(782, 1);
+            this.panel18.TabIndex = 44;
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.Location = new System.Drawing.Point(185, 71);
+            this.label65.MaximumSize = new System.Drawing.Size(583, 0);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(281, 16);
+            this.label65.TabIndex = 21;
+            this.label65.Text = "Sản phẩm quá tệ, đề nghị đốt shop đê ~~~~~";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Times New Roman", 9.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.ForeColor = System.Drawing.Color.Green;
+            this.label64.Location = new System.Drawing.Point(185, 42);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(94, 15);
+            this.label64.TabIndex = 20;
+            this.label64.Text = "Khách hàng VIP";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Location = new System.Drawing.Point(310, 12);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(158, 20);
+            this.label63.TabIndex = 19;
+            this.label63.Text = "Sản Phẩm Như Hạch";
             // 
             // pictureBox18
             // 
@@ -1645,88 +1250,316 @@
             this.pictureBox22.TabIndex = 18;
             this.pictureBox22.TabStop = false;
             // 
-            // label63
+            // label62
             // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(310, 12);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(158, 20);
-            this.label63.TabIndex = 19;
-            this.label63.Text = "Sản Phẩm Như Hạch";
+            this.label62.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(21, 139);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(125, 20);
+            this.label62.TabIndex = 2;
+            this.label62.Text = "Mới đây";
+            this.label62.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label64
+            // label61
             // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Times New Roman", 9.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.ForeColor = System.Drawing.Color.Green;
-            this.label64.Location = new System.Drawing.Point(185, 42);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(94, 15);
-            this.label64.TabIndex = 20;
-            this.label64.Text = "Khách hàng VIP";
+            this.label61.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(3, 117);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(170, 22);
+            this.label61.TabIndex = 1;
+            this.label61.Text = "Không Nhớ Tên";
+            this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label65
+            // pictureBox17
             // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(185, 71);
-            this.label65.MaximumSize = new System.Drawing.Size(583, 0);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(281, 16);
-            this.label65.TabIndex = 21;
-            this.label65.Text = "Sản phẩm quá tệ, đề nghị đốt shop đê ~~~~~";
+            this.pictureBox17.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox17.Image")));
+            this.pictureBox17.Location = new System.Drawing.Point(46, 29);
+            this.pictureBox17.Name = "pictureBox17";
+            this.pictureBox17.Size = new System.Drawing.Size(82, 85);
+            this.pictureBox17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox17.TabIndex = 0;
+            this.pictureBox17.TabStop = false;
             // 
-            // panel18
+            // cbbComment_Sao
             // 
-            this.panel18.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel18.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel18.Location = new System.Drawing.Point(0, 158);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(782, 1);
-            this.panel18.TabIndex = 44;
+            this.cbbComment_Sao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbComment_Sao.FormattingEnabled = true;
+            this.cbbComment_Sao.Items.AddRange(new object[] {
+            "Số sao",
+            "5 sao",
+            "4 sao",
+            "3 sao",
+            "2 sao",
+            "1 sao"});
+            this.cbbComment_Sao.Location = new System.Drawing.Point(688, 222);
+            this.cbbComment_Sao.Name = "cbbComment_Sao";
+            this.cbbComment_Sao.Size = new System.Drawing.Size(121, 25);
+            this.cbbComment_Sao.TabIndex = 47;
             // 
-            // pictureBox23
+            // cbbComment_LoaiKhach
             // 
-            this.pictureBox23.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox23.Image")));
-            this.pictureBox23.Location = new System.Drawing.Point(356, 37);
-            this.pictureBox23.Name = "pictureBox23";
-            this.pictureBox23.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox23.TabIndex = 45;
-            this.pictureBox23.TabStop = false;
+            this.cbbComment_LoaiKhach.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbComment_LoaiKhach.FormattingEnabled = true;
+            this.cbbComment_LoaiKhach.Items.AddRange(new object[] {
+            "Loại khách hàng",
+            "Khách hàng Vip",
+            "Khách hàng thuyền xuyên",
+            "Khách hàng thường"});
+            this.cbbComment_LoaiKhach.Location = new System.Drawing.Point(540, 222);
+            this.cbbComment_LoaiKhach.Name = "cbbComment_LoaiKhach";
+            this.cbbComment_LoaiKhach.Size = new System.Drawing.Size(142, 25);
+            this.cbbComment_LoaiKhach.TabIndex = 46;
             // 
-            // pictureBox24
+            // cbbComment_ThoiGian
             // 
-            this.pictureBox24.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox24.Image")));
-            this.pictureBox24.Location = new System.Drawing.Point(432, 37);
-            this.pictureBox24.Name = "pictureBox24";
-            this.pictureBox24.Size = new System.Drawing.Size(20, 20);
-            this.pictureBox24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox24.TabIndex = 46;
-            this.pictureBox24.TabStop = false;
+            this.cbbComment_ThoiGian.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbbComment_ThoiGian.FormattingEnabled = true;
+            this.cbbComment_ThoiGian.Items.AddRange(new object[] {
+            "Thời gian",
+            "Mới nhất",
+            "Cũ nhất"});
+            this.cbbComment_ThoiGian.Location = new System.Drawing.Point(413, 222);
+            this.cbbComment_ThoiGian.Name = "cbbComment_ThoiGian";
+            this.cbbComment_ThoiGian.Size = new System.Drawing.Size(121, 25);
+            this.cbbComment_ThoiGian.TabIndex = 45;
             // 
-            // label66
+            // label60
             // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Times New Roman", 9.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.ForeColor = System.Drawing.Color.Black;
-            this.label66.Location = new System.Drawing.Point(380, 41);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(25, 15);
-            this.label66.TabIndex = 47;
-            this.label66.Text = "112";
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Location = new System.Drawing.Point(297, 231);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(106, 17);
+            this.label60.TabIndex = 44;
+            this.label60.Text = "Chọn nhận xét:";
             // 
-            // label67
+            // panel16
             // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Times New Roman", 9.6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.ForeColor = System.Drawing.Color.Black;
-            this.label67.Location = new System.Drawing.Point(455, 40);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(25, 15);
-            this.label67.TabIndex = 48;
-            this.label67.Text = "112";
+            this.panel16.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel16.Location = new System.Drawing.Point(9, 209);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(800, 1);
+            this.panel16.TabIndex = 43;
+            // 
+            // button12
+            // 
+            this.button12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.button12.FlatAppearance.BorderSize = 0;
+            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel, ((byte)(0)));
+            this.button12.ForeColor = System.Drawing.Color.White;
+            this.button12.Location = new System.Drawing.Point(595, 98);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(182, 48);
+            this.button12.TabIndex = 26;
+            this.button12.Text = "NHẬN XÉT SẢN PHẨM";
+            this.button12.UseVisualStyleBackColor = false;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(630, 76);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(115, 19);
+            this.label59.TabIndex = 25;
+            this.label59.Text = "Đăng Nhận Xét";
+            // 
+            // lbFiveStar
+            // 
+            this.lbFiveStar.AutoSize = true;
+            this.lbFiveStar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFiveStar.ForeColor = System.Drawing.Color.Green;
+            this.lbFiveStar.Location = new System.Drawing.Point(346, 149);
+            this.lbFiveStar.Name = "lbFiveStar";
+            this.lbFiveStar.Size = new System.Drawing.Size(36, 17);
+            this.lbFiveStar.TabIndex = 24;
+            this.lbFiveStar.Text = "75%";
+            // 
+            // lbFourStar
+            // 
+            this.lbFourStar.AutoSize = true;
+            this.lbFourStar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbFourStar.ForeColor = System.Drawing.Color.Green;
+            this.lbFourStar.Location = new System.Drawing.Point(346, 125);
+            this.lbFourStar.Name = "lbFourStar";
+            this.lbFourStar.Size = new System.Drawing.Size(36, 17);
+            this.lbFourStar.TabIndex = 23;
+            this.lbFourStar.Text = "75%";
+            // 
+            // lbThreeStar
+            // 
+            this.lbThreeStar.AutoSize = true;
+            this.lbThreeStar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbThreeStar.ForeColor = System.Drawing.Color.Green;
+            this.lbThreeStar.Location = new System.Drawing.Point(346, 99);
+            this.lbThreeStar.Name = "lbThreeStar";
+            this.lbThreeStar.Size = new System.Drawing.Size(36, 17);
+            this.lbThreeStar.TabIndex = 22;
+            this.lbThreeStar.Text = "75%";
+            // 
+            // lbTowStar
+            // 
+            this.lbTowStar.AutoSize = true;
+            this.lbTowStar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTowStar.ForeColor = System.Drawing.Color.Green;
+            this.lbTowStar.Location = new System.Drawing.Point(346, 74);
+            this.lbTowStar.Name = "lbTowStar";
+            this.lbTowStar.Size = new System.Drawing.Size(36, 17);
+            this.lbTowStar.TabIndex = 21;
+            this.lbTowStar.Text = "75%";
+            // 
+            // lbOneStar
+            // 
+            this.lbOneStar.AutoSize = true;
+            this.lbOneStar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbOneStar.ForeColor = System.Drawing.Color.Green;
+            this.lbOneStar.Location = new System.Drawing.Point(346, 51);
+            this.lbOneStar.Name = "lbOneStar";
+            this.lbOneStar.Size = new System.Drawing.Size(36, 17);
+            this.lbOneStar.TabIndex = 20;
+            this.lbOneStar.Text = "75%";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(257, 150);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(14, 15);
+            this.label53.TabIndex = 19;
+            this.label53.Text = "5";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(257, 127);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(14, 15);
+            this.label52.TabIndex = 18;
+            this.label52.Text = "4";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.Location = new System.Drawing.Point(257, 102);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(14, 15);
+            this.label51.TabIndex = 17;
+            this.label51.Text = "3";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(257, 78);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(14, 15);
+            this.label50.TabIndex = 16;
+            this.label50.Text = "2";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(257, 51);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(14, 15);
+            this.label49.TabIndex = 15;
+            this.label49.Text = "1";
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(275, 146);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(21, 20);
+            this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox11.TabIndex = 9;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(275, 122);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(21, 20);
+            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox9.TabIndex = 8;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(275, 98);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(21, 18);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox10.TabIndex = 7;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(275, 74);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(21, 21);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 5;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(275, 51);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(21, 19);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 4;
+            this.pictureBox5.TabStop = false;
+            // 
+            // panel15
+            // 
+            this.panel15.BackColor = System.Drawing.Color.Black;
+            this.panel15.Location = new System.Drawing.Point(232, 44);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(2, 120);
+            this.panel15.TabIndex = 3;
+            // 
+            // lbRate_2
+            // 
+            this.lbRate_2.AutoSize = true;
+            this.lbRate_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRate_2.ForeColor = System.Drawing.Color.Red;
+            this.lbRate_2.Location = new System.Drawing.Point(113, 77);
+            this.lbRate_2.Name = "lbRate_2";
+            this.lbRate_2.Size = new System.Drawing.Size(92, 39);
+            this.lbRate_2.TabIndex = 2;
+            this.lbRate_2.Text = "4.5/5";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(101, 51);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(130, 19);
+            this.label47.TabIndex = 1;
+            this.label47.Text = "Điểm Trung Bình";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.Black;
+            this.label46.Location = new System.Drawing.Point(18, 16);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(161, 16);
+            this.label46.TabIndex = 0;
+            this.label46.Text = "ĐÁNH GIÁ SẢN PHẨM";
             // 
             // label23
             // 
@@ -1961,7 +1794,7 @@
             this.Controls.Add(this.panel27);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
-            this.Controls.Add(this.label34);
+            this.Controls.Add(this.lbHienThiKM);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -1973,22 +1806,22 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbAnhSanPham);
             this.Margin = new System.Windows.Forms.Padding(0);
             this.MinimumSize = new System.Drawing.Size(1025, 2104);
             this.Name = "SanPham_Form";
             this.Size = new System.Drawing.Size(1025, 2104);
             this.Load += new System.EventHandler(this.SanPham_Form_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAnhSanPham)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_1)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -1999,37 +1832,32 @@
             this.flowLayoutPanel2.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.flowLayoutPanel3.ResumeLayout(false);
-            this.flowLayoutPanel3.PerformLayout();
+            this.FlistChiTiet.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.flowLayoutPanel4.ResumeLayout(false);
-            this.flowLayoutPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbStar_6)).EndInit();
+            this.FlistBinhLuan.ResumeLayout(false);
+            this.FlistBinhLuan.PerformLayout();
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox18)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox19)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox21)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox22)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox23)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
@@ -2041,27 +1869,22 @@
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pbAnhSanPham;
+        private System.Windows.Forms.Label lbTenSP;
+        private System.Windows.Forms.Label lbRate_1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbHangSX;
+        private System.Windows.Forms.Label lbTonKho;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbGiaBan;
+        private System.Windows.Forms.Label lbKhuyenMai;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lbSoLuongRating;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
@@ -2100,50 +1923,28 @@
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label lbHienThiKM;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
+        private System.Windows.Forms.FlowLayoutPanel FlistChiTiet;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Label label45;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Label label47;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.PictureBox pictureBox16;
-        private System.Windows.Forms.PictureBox pictureBox15;
-        private System.Windows.Forms.PictureBox pictureBox14;
-        private System.Windows.Forms.PictureBox pictureBox13;
-        private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label lbRate_2;
+        private System.Windows.Forms.Label lbFiveStar;
+        private System.Windows.Forms.Label lbFourStar;
+        private System.Windows.Forms.Label lbThreeStar;
+        private System.Windows.Forms.Label lbTowStar;
+        private System.Windows.Forms.Label lbOneStar;
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.Label label51;
@@ -2156,7 +1957,7 @@
         private System.Windows.Forms.ComboBox cbbComment_Sao;
         private System.Windows.Forms.ComboBox cbbComment_LoaiKhach;
         private System.Windows.Forms.ComboBox cbbComment_ThoiGian;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel4;
+        private System.Windows.Forms.FlowLayoutPanel FlistBinhLuan;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.PictureBox pictureBox17;
         private System.Windows.Forms.Label label61;
@@ -2194,5 +1995,17 @@
         private ChiTietSanPham_1 chiTietSanPham_17;
         private ChiTietSanPham_1 chiTietSanPham_18;
         private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.Label lbSoLuongRating_2;
+        private System.Windows.Forms.Label lbSLNhanXet;
+        private System.Windows.Forms.PictureBox pbStar_5;
+        private System.Windows.Forms.PictureBox pbStar_4;
+        private System.Windows.Forms.PictureBox pbStar_3;
+        private System.Windows.Forms.PictureBox pbStar_2;
+        private System.Windows.Forms.PictureBox pbStar_1;
+        private System.Windows.Forms.PictureBox pbStar_10;
+        private System.Windows.Forms.PictureBox pbStar_9;
+        private System.Windows.Forms.PictureBox pbStar_8;
+        private System.Windows.Forms.PictureBox pbStar_7;
+        private System.Windows.Forms.PictureBox pbStar_6;
     }
 }

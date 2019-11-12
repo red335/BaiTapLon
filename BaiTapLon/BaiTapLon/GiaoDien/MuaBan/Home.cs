@@ -14,15 +14,21 @@ namespace BaiTapLon.GiaoDien.MuaBan
     public partial class Home : UserControl
     {
         List<SanPham> sanPhams = new List<SanPham>();
-       
+        MoSanPham_form mo;
         public Home()
         {
             InitializeComponent();
             LoadKho();
         }
-
+        public Home(MoSanPham_form mo)
+        {
+            InitializeComponent();
+            this.mo = mo;
+            LoadKho();
+            
+        }
         private void LoadKho() {
-            MessageBox.Show("Test");
+            //MessageBox.Show("Test");
             KetNoi.SanPhamDAO spDAO = new KetNoi.SanPhamDAO();
             sanPhams = spDAO.layDS();
             NoiBat();
@@ -39,7 +45,7 @@ namespace BaiTapLon.GiaoDien.MuaBan
             int MAX_SP = 5;
             for (int i = 0; i < MAX_SP; i++)
             {
-                ChiTietSanPham_1 chiTietSanPham_1 = new ChiTietSanPham_1(sanPhams[i]);
+                ChiTietSanPham_1 chiTietSanPham_1 = new ChiTietSanPham_1(sanPhams[i],mo);
                 FlistNoiBat.Controls.Add(chiTietSanPham_1);
             }
         }
@@ -53,7 +59,7 @@ namespace BaiTapLon.GiaoDien.MuaBan
             FlistDT.Controls.Clear();
             for (int i = 0; i < MAX_SP; i++)
             {
-                ChiTietSanPham_1 chiTietSanPham_1 = new ChiTietSanPham_1(dt[i]);
+                ChiTietSanPham_1 chiTietSanPham_1 = new ChiTietSanPham_1(dt[i],mo);
                 FlistDT.Controls.Add(chiTietSanPham_1);
             }
         }
@@ -66,7 +72,7 @@ namespace BaiTapLon.GiaoDien.MuaBan
             FlistLK.Controls.Clear();
             for (int i = 0; i < MAX_SP; i++)
             {
-                ChiTietSanPham_1 chiTietSanPham_1 = new ChiTietSanPham_1(lk[i]);
+                ChiTietSanPham_1 chiTietSanPham_1 = new ChiTietSanPham_1(lk[i],mo);
                 FlistLK.Controls.Add(chiTietSanPham_1);
             }
         }
@@ -77,7 +83,7 @@ namespace BaiTapLon.GiaoDien.MuaBan
 
             for (int i = 0; i < MAX_SP; i++)
             {
-                ChiTietSanPham_1 chiTietSanPham_1 = new ChiTietSanPham_1(sanPhams[i]);
+                ChiTietSanPham_1 chiTietSanPham_1 = new ChiTietSanPham_1(sanPhams[i],mo);
                 FlistKM.Controls.Add(chiTietSanPham_1);
             }
 

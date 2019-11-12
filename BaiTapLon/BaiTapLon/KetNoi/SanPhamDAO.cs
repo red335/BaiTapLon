@@ -41,14 +41,23 @@ namespace BaiTapLon.KetNoi
                 string loai = data.Rows[0][5].ToString();
                 string hinhAnh = data.Rows[0][6].ToString();
                 string chitiet = data.Rows[0][7].ToString();
+              
+                int total_socre = Convert.ToInt32(data.Rows[0][9]);
+                int one = Convert.ToInt32(data.Rows[0][10]);
+                int tow = Convert.ToInt32(data.Rows[0][11]);
+                int three = Convert.ToInt32(data.Rows[0][12]);
+                int four = Convert.ToInt32(data.Rows[0][13]);
+                int five = Convert.ToInt32(data.Rows[0][14]);
+                Rate rate = new Rate(total_socre, one, tow, three, four, five);
 
                 int maHSX = Convert.ToInt32(data.Rows[0][8]);
-                string tenH = data.Rows[0][10].ToString();
-                string qg = data.Rows[0][11].ToString();
+                string tenH = data.Rows[0][16].ToString();
+                string qg = data.Rows[0][17].ToString();
 
                 HangSX hangSX = new HangSX(maHSX,tenH,qg);
                 sanPham = new SanPham(ma,ten,tonKho,gia,giaBan,loai,hinhAnh,chitiet);
                 sanPham.HangSanXuat = hangSX;
+                sanPham.Rating = rate;
             }
             return sanPham;
         }
@@ -71,14 +80,22 @@ namespace BaiTapLon.KetNoi
                 string hinhAnh = row[6].ToString();
                 string chitiet = row[7].ToString();
 
+                int total_socre = Convert.ToInt32(row[9]);
+                int one = Convert.ToInt32(row[10]);
+                int tow = Convert.ToInt32(row[11]);
+                int three = Convert.ToInt32(row[12]);
+                int four = Convert.ToInt32(row[13]);
+                int five = Convert.ToInt32(row[14]);
+                Rate rate = new Rate(total_socre, one, tow, three, four, five);
+
                 int maHSX = Convert.ToInt32(row[8]);
-                string tenH = row[10].ToString();
-                string qg = row[11].ToString();
+                string tenH = row[16].ToString();
+                string qg = row[17].ToString();
 
                 HangSX hangSX = new HangSX(maHSX, tenH, qg);
                 sanPham = new SanPham(ma, ten, tonKho, gia, giaBan, loai, hinhAnh, chitiet);
                 sanPham.HangSanXuat = hangSX;
-
+                sanPham.Rating = rate;
                 sanPhams.Add(sanPham);
             }
 
