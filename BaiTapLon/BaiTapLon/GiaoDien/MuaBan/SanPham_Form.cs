@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Data;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using BaiTapLon.GiaoDien.Dialog;
 using System.Windows.Forms;
 using BaiTapLon.Model;
 namespace BaiTapLon.GiaoDien.MuaBan
@@ -148,9 +148,13 @@ namespace BaiTapLon.GiaoDien.MuaBan
                 button.Font = new Font("Tahoma", 9.3F, FontStyle.Regular);
                 button.Text = "XEM THÊM";
                 button.Margin = new Padding(190, 10, 0, 0);
+                button.Click += XemThemChiTiet;
                 FlistChiTiet.Controls.Add(button);
             }
         }
+
+      
+
         private Panel createPanel(string tit, string dat)
         {
             Panel panel = new Panel();
@@ -219,7 +223,10 @@ namespace BaiTapLon.GiaoDien.MuaBan
             binhLuans.Add(binhLuan);
             DocBinhLuan();
         }
-
+        private void XemThemChiTiet(object sender, EventArgs e)
+        {
+            new ChiTietSanPham_2(sanPham).ShowDialog();
+        }
         #endregion
     }
 }

@@ -31,9 +31,9 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pnHeader = new System.Windows.Forms.Panel();
             this.pbMinimum = new System.Windows.Forms.PictureBox();
+            this.header_Form1 = new BaiTapLon.GiaoDien.MuaBan.Header_Form();
             this.btnExit = new System.Windows.Forms.Button();
             this.Body = new System.Windows.Forms.Panel();
-            this.header_Form1 = new BaiTapLon.GiaoDien.MuaBan.Header_Form();
             this.pnHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimum)).BeginInit();
             this.SuspendLayout();
@@ -50,6 +50,7 @@
             this.pnHeader.Name = "pnHeader";
             this.pnHeader.Size = new System.Drawing.Size(1143, 71);
             this.pnHeader.TabIndex = 0;
+            this.pnHeader.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Header_Form1_MouseDown);
             // 
             // pbMinimum
             // 
@@ -61,6 +62,16 @@
             this.pbMinimum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbMinimum.TabIndex = 2;
             this.pbMinimum.TabStop = false;
+            // 
+            // header_Form1
+            // 
+            this.header_Form1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.header_Form1.Location = new System.Drawing.Point(0, 0);
+            this.header_Form1.Margin = new System.Windows.Forms.Padding(0);
+            this.header_Form1.Name = "header_Form1";
+            this.header_Form1.Size = new System.Drawing.Size(1032, 71);
+            this.header_Form1.TabIndex = 1;
+            this.header_Form1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Header_Form1_MouseDown);
             // 
             // btnExit
             // 
@@ -86,15 +97,6 @@
             this.Body.Name = "Body";
             this.Body.Size = new System.Drawing.Size(1143, 667);
             this.Body.TabIndex = 2;
-            // 
-            // header_Form1
-            // 
-            this.header_Form1.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.header_Form1.Location = new System.Drawing.Point(0, 0);
-            this.header_Form1.Margin = new System.Windows.Forms.Padding(0);
-            this.header_Form1.Name = "header_Form1";
-            this.header_Form1.Size = new System.Drawing.Size(1032, 71);
-            this.header_Form1.TabIndex = 1;
             // 
             // Form1
             // 

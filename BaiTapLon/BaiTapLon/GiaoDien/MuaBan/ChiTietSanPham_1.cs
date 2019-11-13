@@ -26,9 +26,9 @@ namespace BaiTapLon.GiaoDien.MuaBan
             InitializeComponent();
             this.sanPham = sanPham;
             this.Mo = Mo;
-            Load();
+            Loaded();
         }
-        private void Load() {
+        private void Loaded() {
             pbAnh.Image = Image.FromFile(sanPham.DuongDanHinhAnh);
             lbTen.Text = sanPham.TenSP;
             lbGiaBan.Text = (sanPham.GiaBan*1000) .ToString("#,###") + " VND";
@@ -36,6 +36,8 @@ namespace BaiTapLon.GiaoDien.MuaBan
             foreach (Control control in this.Controls)
             {
                 control.Click += Child_Click;
+                control.MouseHover += Child_Hover;
+                control.MouseLeave += Child_Leave;
             }
         }
 
@@ -45,6 +47,26 @@ namespace BaiTapLon.GiaoDien.MuaBan
         }
         private void Click_Panel(object sender, EventArgs e) {
             this.Mo( new SanPham_Form(sanPham));
+        }
+
+
+        private void Child_Hover(object sender, EventArgs e)
+        {
+            Panel_Hover(this, EventArgs.Empty);
+        }
+        private void Child_Leave(object sender, EventArgs e)
+        {
+            Panel_Leave(this, EventArgs.Empty);
+        }
+
+
+        private void Panel_Hover(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Gainsboro;
+        }
+        private void Panel_Leave(object sender, EventArgs e)
+        {
+            this.BackColor = Color.White;
         }
     }
 }

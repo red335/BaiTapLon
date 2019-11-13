@@ -8,6 +8,7 @@ namespace BaiTapLon.HoTro
 {
     public class TatCaDelegate
     {
-      public  delegate void ResultDangNhanXet(Model.BinhLuan binhLuan); 
+        public  delegate void ResultDangNhanXet(Model.BinhLuan binhLuan);
+        public delegate void getResultCHiTietSanPham(string cauhinh);
     }
 }
