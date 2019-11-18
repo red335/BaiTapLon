@@ -16,3 +16,10 @@ D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.csp
 D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.exe
 D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.pdb
 D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.Dialog.ThemChiTietSanPham.resources
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.Dialog.HangSX_Form.resources
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.MuaBan.LocSanPham.resources
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.Dialog.PhanLoai_Form.resources
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.MuaBan.GioHang.resources
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.MuaBan.GioHang_ChiTietSanPham.resources
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.MuaBan.XacNhanGiaoDich.resources
+D:\TaiLieuGithub\BaiTapLon\BaiTapLon\BaiTapLon\BaiTapLon\obj\Debug\BaiTapLon.GiaoDien.HeThong.QLTaiKhoan.resources

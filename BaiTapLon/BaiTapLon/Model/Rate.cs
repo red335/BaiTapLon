@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BaiTapLon.Model
 {
-    class Rate
+    public class Rate
     {
         private int total;
         private int oneStar;
@@ -17,7 +17,7 @@ namespace BaiTapLon.Model
       //  private float average;
         public Rate()
         {
-
+            Total = 0;
         }
 
         public Rate(int total, int oneStar, int towStar, int threeStar, int fourStar, int fiveStar)

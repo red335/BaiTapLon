@@ -62,9 +62,9 @@
             this.label8 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtSLSP = new System.Windows.Forms.TextBox();
+            this.btnSUBSP = new System.Windows.Forms.Button();
+            this.btnAddSP = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -214,7 +214,7 @@
             this.pbAnhSanPham.Image = ((System.Drawing.Image)(resources.GetObject("pbAnhSanPham.Image")));
             this.pbAnhSanPham.Location = new System.Drawing.Point(39, 111);
             this.pbAnhSanPham.Name = "pbAnhSanPham";
-            this.pbAnhSanPham.Size = new System.Drawing.Size(363, 347);
+            this.pbAnhSanPham.Size = new System.Drawing.Size(363, 384);
             this.pbAnhSanPham.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbAnhSanPham.TabIndex = 0;
             this.pbAnhSanPham.TabStop = false;
@@ -589,38 +589,40 @@
             this.button4.Text = "TRẢ GÓP";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // textBox1
+            // txtSLSP
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(36, 26);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(33, 21);
-            this.textBox1.TabIndex = 29;
-            this.textBox1.Text = "1";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSLSP.Enabled = false;
+            this.txtSLSP.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSLSP.Location = new System.Drawing.Point(36, 26);
+            this.txtSLSP.Name = "txtSLSP";
+            this.txtSLSP.Size = new System.Drawing.Size(33, 21);
+            this.txtSLSP.TabIndex = 29;
+            this.txtSLSP.Text = "1";
+            this.txtSLSP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button1
+            // btnSUBSP
             // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(9, 26);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(26, 21);
-            this.button1.TabIndex = 30;
-            this.button1.Text = "--";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSUBSP.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnSUBSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSUBSP.Location = new System.Drawing.Point(9, 26);
+            this.btnSUBSP.Name = "btnSUBSP";
+            this.btnSUBSP.Size = new System.Drawing.Size(26, 21);
+            this.btnSUBSP.TabIndex = 30;
+            this.btnSUBSP.Text = "--";
+            this.btnSUBSP.UseVisualStyleBackColor = true;
+            this.btnSUBSP.Click += new System.EventHandler(this.btnSUBSP_Click);
             // 
-            // button2
+            // btnAddSP
             // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(70, 26);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(26, 21);
-            this.button2.TabIndex = 31;
-            this.button2.Text = "+";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnAddSP.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
+            this.btnAddSP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddSP.Location = new System.Drawing.Point(70, 26);
+            this.btnAddSP.Name = "btnAddSP";
+            this.btnAddSP.Size = new System.Drawing.Size(26, 21);
+            this.btnAddSP.TabIndex = 31;
+            this.btnAddSP.Text = "+";
+            this.btnAddSP.UseVisualStyleBackColor = true;
+            this.btnAddSP.Click += new System.EventHandler(this.btnAddSP_Click);
             // 
             // button3
             // 
@@ -635,13 +637,14 @@
             this.button3.TabIndex = 32;
             this.button3.Text = "MUA NGAY";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.button3);
-            this.groupBox4.Controls.Add(this.textBox1);
-            this.groupBox4.Controls.Add(this.button2);
-            this.groupBox4.Controls.Add(this.button1);
+            this.groupBox4.Controls.Add(this.txtSLSP);
+            this.groupBox4.Controls.Add(this.btnAddSP);
+            this.groupBox4.Controls.Add(this.btnSUBSP);
             this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox4.Location = new System.Drawing.Point(425, 458);
             this.groupBox4.Name = "groupBox4";
@@ -655,7 +658,7 @@
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(39, 470);
+            this.button6.Location = new System.Drawing.Point(39, 501);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 36);
             this.button6.TabIndex = 36;
@@ -668,7 +671,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(120, 470);
+            this.button7.Location = new System.Drawing.Point(120, 501);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 36);
             this.button7.TabIndex = 37;
@@ -681,7 +684,7 @@
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold);
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(201, 470);
+            this.button8.Location = new System.Drawing.Point(201, 501);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 36);
             this.button8.TabIndex = 38;
@@ -719,12 +722,11 @@
             // 
             // label33
             // 
-            this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label33.ForeColor = System.Drawing.Color.White;
             this.label33.Location = new System.Drawing.Point(782, 25);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(85, 16);
+            this.label33.Size = new System.Drawing.Size(86, 16);
             this.label33.TabIndex = 8;
             this.label33.Text = "THƯƠNG HIỆU";
             // 
@@ -799,6 +801,9 @@
             this.label24.Size = new System.Drawing.Size(43, 13);
             this.label24.TabIndex = 0;
             this.label24.Text = "HOME";
+            this.label24.Click += new System.EventHandler(this.BackHome_Click);
+            this.label24.MouseLeave += new System.EventHandler(this.Tag_Leave);
+            this.label24.MouseHover += new System.EventHandler(this.Tag_Hover);
             // 
             // label25
             // 
@@ -823,6 +828,8 @@
             this.label26.Size = new System.Drawing.Size(79, 13);
             this.label26.TabIndex = 2;
             this.label26.Text = "ĐIỆN THOẠI";
+            this.label26.MouseLeave += new System.EventHandler(this.Tag_Leave);
+            this.label26.MouseHover += new System.EventHandler(this.Tag_Hover);
             // 
             // label27
             // 
@@ -847,6 +854,8 @@
             this.label28.Size = new System.Drawing.Size(68, 13);
             this.label28.TabIndex = 4;
             this.label28.Text = "SAMSUNG";
+            this.label28.MouseLeave += new System.EventHandler(this.Tag_Leave);
+            this.label28.MouseHover += new System.EventHandler(this.Tag_Hover);
             // 
             // label29
             // 
@@ -1086,8 +1095,9 @@
             this.FlistBinhLuan.Controls.Add(this.panel17);
             this.FlistBinhLuan.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.FlistBinhLuan.Location = new System.Drawing.Point(15, 265);
+            this.FlistBinhLuan.MinimumSize = new System.Drawing.Size(797, 168);
             this.FlistBinhLuan.Name = "FlistBinhLuan";
-            this.FlistBinhLuan.Size = new System.Drawing.Size(797, 167);
+            this.FlistBinhLuan.Size = new System.Drawing.Size(797, 168);
             this.FlistBinhLuan.TabIndex = 48;
             // 
             // panel17
@@ -1888,9 +1898,9 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnAddSP;
+        private System.Windows.Forms.Button btnSUBSP;
+        private System.Windows.Forms.TextBox txtSLSP;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button5;

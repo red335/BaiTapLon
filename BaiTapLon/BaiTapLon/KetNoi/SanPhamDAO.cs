@@ -28,10 +28,10 @@ namespace BaiTapLon.KetNoi
 
         public  SanPham getElement(string id) 
         {
-            string query = "select * from SANPHAM sp , HANGSX h where sp.MAHSX = h.MAHSX and MASP  = '" + id + "'";
+            string query = "select * from SANPHAM  where MASP  = " + id ;
             DataTable data =  DocCSDL(query);
             SanPham sanPham = null;
-            if (data == null || data.Rows.Count == 0)
+            if (data != null || data.Rows.Count != 0)
             {
                 int ma = Convert.ToInt32(data.Rows[0][0]);
                 string ten = data.Rows[0][1].ToString();
@@ -41,20 +41,10 @@ namespace BaiTapLon.KetNoi
                 string loai = data.Rows[0][5].ToString();
                 string hinhAnh = data.Rows[0][6].ToString();
                 string chitiet = data.Rows[0][7].ToString();
-              
-                int total_socre = Convert.ToInt32(data.Rows[0][9]);
-                int one = Convert.ToInt32(data.Rows[0][10]);
-                int tow = Convert.ToInt32(data.Rows[0][11]);
-                int three = Convert.ToInt32(data.Rows[0][12]);
-                int four = Convert.ToInt32(data.Rows[0][13]);
-                int five = Convert.ToInt32(data.Rows[0][14]);
-                Rate rate = new Rate(total_socre, one, tow, three, four, five);
 
-                int maHSX = Convert.ToInt32(data.Rows[0][8]);
-                string tenH = data.Rows[0][16].ToString();
-                string qg = data.Rows[0][17].ToString();
-
-                HangSX hangSX = new HangSX(maHSX,tenH,qg);
+                Rate rate = new RateDAO().getRate(ma.ToString());
+                
+                HangSX hangSX = new HangSXDAO().getElement(data.Rows[0][8].ToString());
                 sanPham = new SanPham(ma,ten,tonKho,gia,giaBan,loai,hinhAnh,chitiet);
                 sanPham.HangSanXuat = hangSX;
                 sanPham.Rating = rate;
@@ -65,7 +55,7 @@ namespace BaiTapLon.KetNoi
         public  List<SanPham> layDS()
         {
             List<SanPham> sanPhams = new List<SanPham>();
-            DataTable dataTable = DocCSDL("select * from SANPHAM sp , HANGSX h where sp.MAHSX = h.MAHSX");
+            DataTable dataTable = DocCSDL("select * from SANPHAM ");
             if (dataTable == null || dataTable.Rows.Count == 0) return null;
             foreach (DataRow row in dataTable.Rows)
             {
@@ -80,19 +70,9 @@ namespace BaiTapLon.KetNoi
                 string hinhAnh = row[6].ToString();
                 string chitiet = row[7].ToString();
 
-                int total_socre = Convert.ToInt32(row[9]);
-                int one = Convert.ToInt32(row[10]);
-                int tow = Convert.ToInt32(row[11]);
-                int three = Convert.ToInt32(row[12]);
-                int four = Convert.ToInt32(row[13]);
-                int five = Convert.ToInt32(row[14]);
-                Rate rate = new Rate(total_socre, one, tow, three, four, five);
+                Rate rate = new RateDAO().getRate(ma.ToString());
 
-                int maHSX = Convert.ToInt32(row[8]);
-                string tenH = row[16].ToString();
-                string qg = row[17].ToString();
-
-                HangSX hangSX = new HangSX(maHSX, tenH, qg);
+                HangSX hangSX = new HangSXDAO().getElement(row[8].ToString());
                 sanPham = new SanPham(ma, ten, tonKho, gia, giaBan, loai, hinhAnh, chitiet);
                 sanPham.HangSanXuat = hangSX;
                 sanPham.Rating = rate;

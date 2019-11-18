@@ -77,6 +77,7 @@
             this.label6.Size = new System.Drawing.Size(78, 20);
             this.label6.TabIndex = 12;
             this.label6.Text = "KHName";
+            this.label6.Click += new System.EventHandler(this.HOME_CLICK);
             // 
             // pictureBox6
             // 
@@ -88,6 +89,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 13;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.HOME_CLICK);
             // 
             // btnKM
             // 

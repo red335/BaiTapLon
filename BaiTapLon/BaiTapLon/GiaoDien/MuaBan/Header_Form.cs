@@ -12,6 +12,11 @@ namespace BaiTapLon.GiaoDien.MuaBan
 {
     public partial class Header_Form : UserControl
     {
+       
+        private HoTro.TatCaDelegate.BackHome back;
+
+        public HoTro.TatCaDelegate.BackHome Back { get => back; set => back = value; }
+
         public Header_Form()
         {
             InitializeComponent();
@@ -31,7 +36,7 @@ namespace BaiTapLon.GiaoDien.MuaBan
         private void Menu_Hover(object sender, EventArgs e)
         {
             Button button = sender as Button;
-            button.ForeColor = Color.IndianRed;
+            button.ForeColor = Color.Red;
         }
         private void Menu_Leave(object sender, EventArgs e)
         {
@@ -40,7 +45,12 @@ namespace BaiTapLon.GiaoDien.MuaBan
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            
+        }
 
+        private void HOME_CLICK(object sender, EventArgs e)
+        {
+            back(GIAO_DIEN_QUAN_LY.BUON_BAN);
         }
     }
 }

@@ -25,47 +25,69 @@ namespace BaiTapLon.GiaoDien.Dialog
 
             Updated();
         }
-
+        // ========= GIAO DIEN ==========
+        #region Hien Thi
         private void Updated() {
-           
+
             HienThiThongTinCoBan();
             HienThiChiTietSP();
         }
-        private void ClearChiTiet() {
 
-            const int MAX = 10;
-            if (MAX > FlistCT.Controls.Count) return;
-            for (int i = MAX; i < FlistCT.Controls.Count; i++) 
-                FlistCT.Controls.RemoveAt(MAX+1);
-            
-        }
         private void HienThiThongTinCoBan() {
 
             txtTen.Text = sanPham.TenSP;
-            txtGiaBan.Text = sanPham.GiaBan.ToString("#,###")+" VND";
-            txtGiaGoc.Text = sanPham.GiaDoc.ToString("#,###") + " VND";
+            txtGiaBan.Text = (sanPham.GiaBan * 1000).ToString("#,###") + " VND";
+            txtGiaGoc.Text = (sanPham.GiaDoc * 1000).ToString("#,###") + " VND";
             txtDiem.Text = sanPham.Rating.Average().ToString() + "/5";
-
-            int index = hangSXes.FindIndex( (s) => { return s.MaHSX == sanPham.HangSanXuat.MaHSX; });
-            // txtHang.Text = sanPham.HangSanXuat.TenHSX;
-            cbbHSX.SelectedIndex= index;
-            txtLoai.Text = sanPham.Loai.ToString();
+            if (sanPham.HangSanXuat != null)
+            {
+                int index = hangSXes.FindIndex((s) => { return s.MaHSX == sanPham.HangSanXuat.MaHSX; });
+                // txtHang.Text = sanPham.HangSanXuat.TenHSX;
+                cbbHSX.SelectedIndex = index;
+            }
+            cbbLOAI.SelectedIndex = 0;
+            if (sanPham.Loai == LoaiSanPham.LINH_KIEN) cbbLOAI.SelectedIndex = 1;
             txtTon.Text = sanPham.TonKho.ToString();
             pictureBox1.Image = Image.FromFile(sanPham.DuongDanHinhAnh);
 
         }
         private void HienThiChiTietSP() {
-            ClearChiTiet();
+            FLIST.Controls.Clear();
             chiTiet = sanPham.ChiTiet.Split(';');
             foreach (string ele in chiTiet) {
                 string[] dat = ele.Split(':');
-                FlistCT.Controls.Add( createPanel(dat[0],dat[1]));
+                FLIST.Controls.Add(createPanel(dat[0], dat[1]));
             }
-            FlistCT.Controls.Add(createXemThem());
+            FLIST.Controls.Add(createXemThem());
         }
 
+        //RESET LAI SAN PHAM
+        private void ClearText(int mode = 1) {
+            txtGiaBan.Text = txtGiaGoc.Text = txtTen.Text = "";
+            if (mode == 2) {
+                cbbLOAI.SelectedIndex = 0;
+                cbbHSX.SelectedIndex = 0;
+                txtDiem.Text = "5/5";
+                txtTon.Text = "0";
+            }
+        }
+
+        // DUOC PHEP CHINH SUA LAI TEN, HANG SX, GIA GOC, GIA BAN, ANH DAI DIEN       
+        private void ChinhSuaThongTinCoBan(bool show,int mode  =1) {
+            if (show == false) ClearText();
+            txtGiaBan.ReadOnly = txtGiaGoc.ReadOnly = txtTen.ReadOnly = show;
+            anhDaiDien.Enabled =btnHSX.Enabled = cbbHSX.Enabled = !show;
+
+            if (mode == 2) 
+                cbbLOAI.Enabled = !show;
+            
+        }
+
+        #endregion
+
+
         #region Tao Chi Tiet
-        
+
         private Panel createPanel(string Title, string data) {
             Panel panel = new Panel();
             panel.Controls.Add(createLabel1(data));
@@ -78,12 +100,12 @@ namespace BaiTapLon.GiaoDien.Dialog
 
             return panel;
         }
-        
+
         // DU LIEU Du LIEU
         private Label createLabel1(string dat) {
             Label label = new Label();
             label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            label.Location = new System.Drawing.Point(182, 12);    
+            label.Location = new System.Drawing.Point(182, 12);
             label.Size = new System.Drawing.Size(218, 16);
             label.Text = dat;
             return label;
@@ -102,8 +124,8 @@ namespace BaiTapLon.GiaoDien.Dialog
             Panel panel = new Panel();
             panel.BackColor = System.Drawing.Color.Gainsboro;
             panel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            panel.Location = new System.Drawing.Point(0, 31);        
-            panel.Size = new System.Drawing.Size(441, 1);          
+            panel.Location = new System.Drawing.Point(0, 31);
+            panel.Size = new System.Drawing.Size(441, 1);
             return panel;
         }
         #endregion
@@ -125,7 +147,7 @@ namespace BaiTapLon.GiaoDien.Dialog
         }
         private void XemThem(object sender, EventArgs e)
         {
-            new ThemChiTietSanPham(sanPham.ChiTiet,ThemChiTiet).ShowDialog();  
+            new ThemChiTietSanPham(sanPham.ChiTiet, ThemChiTiet).ShowDialog();
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -136,6 +158,45 @@ namespace BaiTapLon.GiaoDien.Dialog
             sanPham.ChiTiet = chiTiet;
             HienThiChiTietSP();
         }
+
+
+
+        private void Btn_Them(object sender, EventArgs e){
+            sanPham = new SanPham();
+            Updated();
+            ChinhSuaThongTinCoBan(false,2);
+            btnOK.Enabled = true;
+        }
+        private void Btn_Xoa(object sender, EventArgs e) { 
+            
+        }
+        private void Btn_Sua(object sender, EventArgs e)
+        {
+            ChinhSuaThongTinCoBan(false);
+            btnOK.Enabled = true;
+        }
+        private void Btn_OK(object sender, EventArgs e)
+        {
+            int giaGoc = 0;
+            if (!Int32.TryParse(txtGiaGoc.Text, out giaGoc))
+            {
+                MessageBox.Show("Gia phai luon la so");
+            }
+            if (txtTen.Text == "") { MessageBox.Show("Ten Khong De Trong");}
+            
+            string[] ct = sanPham.ChiTiet.Split(';');
+            for (int i = 0;i<ct.Length;i++) {
+                ct[i] = ct[i].Trim();
+                string[] dat = ct[i].Split(':');
+                if (dat[0] == "" || dat[1] == "") { 
+                    MessageBox.Show("LOI! Chi tiet san pham dong thu " + (i+1).ToString()+" da de trong"); 
+                    break; }
+            }
+        }
+
+
         #endregion
+
+
     }
 }

@@ -64,11 +64,23 @@
     <Compile Include="GiaoDien\Dialog\DangBinhLuan.Designer.cs">
       <DependentUpon>DangBinhLuan.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\Dialog\HangSX_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\Dialog\HangSX_Form.Designer.cs">
+      <DependentUpon>HangSX_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="GiaoDien\Dialog\KhungBInhLuan.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GiaoDien\Dialog\KhungBInhLuan.Designer.cs">
       <DependentUpon>KhungBInhLuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\Dialog\PhanLoai_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\Dialog\PhanLoai_Form.Designer.cs">
+      <DependentUpon>PhanLoai_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="GiaoDien\Dialog\ThemChiTietSanPham.cs">
       <SubType>Form</SubType>
@@ -76,11 +88,29 @@
     <Compile Include="GiaoDien\Dialog\ThemChiTietSanPham.Designer.cs">
       <DependentUpon>ThemChiTietSanPham.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\HeThong\QLTaiKhoan.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\HeThong\QLTaiKhoan.Designer.cs">
+      <DependentUpon>QLTaiKhoan.cs</DependentUpon>
+    </Compile>
     <Compile Include="GiaoDien\MuaBan\ChiTietSanPham_1.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GiaoDien\MuaBan\ChiTietSanPham_1.Designer.cs">
       <DependentUpon>ChiTietSanPham_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\MuaBan\GioHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\MuaBan\GioHang.Designer.cs">
+      <DependentUpon>GioHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GiaoDien\MuaBan\GioHang_ChiTietSanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\MuaBan\GioHang_ChiTietSanPham.Designer.cs">
+      <DependentUpon>GioHang_ChiTietSanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="GiaoDien\MuaBan\Header_Form.cs">
       <SubType>UserControl</SubType>
@@ -94,6 +124,12 @@
     <Compile Include="GiaoDien\MuaBan\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\MuaBan\LocSanPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\MuaBan\LocSanPham.Designer.cs">
+      <DependentUpon>LocSanPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="GiaoDien\MuaBan\MuaBan_Form.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -106,14 +142,29 @@
     <Compile Include="GiaoDien\MuaBan\SanPham_Form.Designer.cs">
       <DependentUpon>SanPham_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\MuaBan\XacNhanGiaoDich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\MuaBan\XacNhanGiaoDich.Designer.cs">
+      <DependentUpon>XacNhanGiaoDich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HoTro\SendingEmail.cs" />
+    <Compile Include="HoTro\TapCacHang.cs" />
     <Compile Include="HoTro\TatCaDelegate.cs" />
     <Compile Include="KetNoi\BinhLuanDAO.cs" />
+    <Compile Include="KetNoi\GioHangDAO.cs" />
     <Compile Include="KetNoi\HangSXDAO.cs" />
     <Compile Include="KetNoi\KetNoiCSDL.cs" />
+    <Compile Include="KetNoi\KhachHangDAO.cs" />
+    <Compile Include="KetNoi\NhanVienDAO.cs" />
+    <Compile Include="KetNoi\RateDAO.cs" />
     <Compile Include="KetNoi\SanPhamDAO.cs" />
     <Compile Include="KetNoi\TaiKhoanDAO.cs" />
     <Compile Include="Model\BinhLuan.cs" />
+    <Compile Include="Model\DonHang.cs" />
     <Compile Include="Model\HangSX.cs" />
+    <Compile Include="Model\KhachHang.cs" />
+    <Compile Include="Model\NhanVien.cs" />
     <Compile Include="Model\Rate.cs" />
     <Compile Include="Model\SanPham.cs" />
     <Compile Include="Model\TaiKhoan.cs" />
@@ -128,14 +179,29 @@
     <EmbeddedResource Include="GiaoDien\Dialog\DangBinhLuan.resx">
       <DependentUpon>DangBinhLuan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\Dialog\HangSX_Form.resx">
+      <DependentUpon>HangSX_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\Dialog\KhungBInhLuan.resx">
       <DependentUpon>KhungBInhLuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\Dialog\PhanLoai_Form.resx">
+      <DependentUpon>PhanLoai_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\Dialog\ThemChiTietSanPham.resx">
       <DependentUpon>ThemChiTietSanPham.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\HeThong\QLTaiKhoan.resx">
+      <DependentUpon>QLTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\MuaBan\ChiTietSanPham_1.resx">
       <DependentUpon>ChiTietSanPham_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\MuaBan\GioHang.resx">
+      <DependentUpon>GioHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\MuaBan\GioHang_ChiTietSanPham.resx">
+      <DependentUpon>GioHang_ChiTietSanPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\MuaBan\Header_Form.resx">
       <DependentUpon>Header_Form.cs</DependentUpon>
@@ -143,11 +209,17 @@
     <EmbeddedResource Include="GiaoDien\MuaBan\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\MuaBan\LocSanPham.resx">
+      <DependentUpon>LocSanPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\MuaBan\MuaBan_Form.resx">
       <DependentUpon>MuaBan_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\MuaBan\SanPham_Form.resx">
       <DependentUpon>SanPham_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\MuaBan\XacNhanGiaoDich.resx">
+      <DependentUpon>XacNhanGiaoDich.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

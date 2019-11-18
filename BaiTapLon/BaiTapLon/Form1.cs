@@ -11,23 +11,36 @@ using System.IO;
 namespace BaiTapLon
 {
 
+    public enum GIAO_DIEN_QUAN_LY { BUON_BAN, QUAN_LY};
+ 
     public partial class Form1 : Form
     {
+
+        
         MuaBan_Form muaBan_Form = null;
         public Form1()
         {
             InitializeComponent();
-          
+
+
+           
             pbMinimum.Click += btnMinimum_Click;
             pbMinimum.MouseHover += btnMinimum_Hover;
             pbMinimum.MouseLeave += btnMinimum_Leave;
-            Add_Main_Form();
+            Add_Main_Form(GIAO_DIEN_QUAN_LY.BUON_BAN);
             this.MouseDown += Header_Form1_MouseDown;
         }
-        private void Add_Main_Form() {
+        private void Add_Main_Form(GIAO_DIEN_QUAN_LY GD) {
             Body.Controls.Clear();
-            Body.Controls.Add(new MuaBan_Form(Body.Size));
-            
+            if (GD == GIAO_DIEN_QUAN_LY.BUON_BAN)
+            {
+              MuaBan_Form mua =  new MuaBan_Form(Body.Size);
+                Body.Controls.Add(mua);
+                mua.Back = Add_Main_Form;
+                header_Form1.Back = Add_Main_Form;
+            }
+            else if (GD == GIAO_DIEN_QUAN_LY.QUAN_LY)
+                Body.Controls.Add(new MuaBan_Form(Body.Size));
         }
 
 

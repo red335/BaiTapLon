@@ -31,11 +31,11 @@ namespace BaiTapLon.KetNoi
             DataTable dataTable = DocCSDL(query);
             
             if (dataTable == null || dataTable.Rows.Count == 0) return null;
-            foreach (var row in dataTable.Rows)
+            foreach (DataRow row in dataTable.Rows)
             {
-                int ma = Convert.ToInt32(dataTable.Rows[0][0]);
-                string ten = dataTable.Rows[0][1].ToString();
-                string quocGia = dataTable.Rows[0][2].ToString();
+                int ma = Convert.ToInt32(row[0]);
+                string ten = row[1].ToString();
+                string quocGia = row[2].ToString();
                 hangSXes.Add( new HangSX(ma, ten, quocGia));
 
             }

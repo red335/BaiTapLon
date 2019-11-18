@@ -8,19 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BaiTapLon.Model;
+using BaiTapLon.HoTro;
 
 namespace BaiTapLon.GiaoDien.MuaBan
 {
     public partial class Home : UserControl
     {
+        HoTro.TatCaDelegate.BackHome back;
+
         List<SanPham> sanPhams = new List<SanPham>();
-        MoSanPham_form mo;
+        HoTro.TatCaDelegate.AddOnHome  mo;
+
+        public TatCaDelegate.BackHome Back { get => back; set => back = value; }
+
         public Home()
         {
             InitializeComponent();
             LoadKho();
         }
-        public Home(MoSanPham_form mo)
+        public Home(HoTro.TatCaDelegate.AddOnHome mo)
         {
             InitializeComponent();
             this.mo = mo;

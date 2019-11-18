@@ -38,9 +38,10 @@ namespace BaiTapLon.Model
             giaDoc=0;
             giaBan=0;
             Loai= LoaiSanPham.DIEN_THOAI;
-            duongDanHinhAnh = " ";
-            chiTiet = " ";
-
+            duongDanHinhAnh = "Img/Default.png";
+            chiTiet = " : ";
+            hangSanXuat = null;
+            rating = new Rate();
         }
         public SanPham(int maSP, string tenSP, int tonKho, int giaDoc, int giaBan, string loai, string duongDanHinhAnh, string chiTiet)
         {

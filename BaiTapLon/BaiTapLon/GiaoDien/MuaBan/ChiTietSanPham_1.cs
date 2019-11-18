@@ -15,19 +15,21 @@ namespace BaiTapLon.GiaoDien.MuaBan
     {
               
         SanPham sanPham;
-        MoSanPham_form Mo;
+        HoTro.TatCaDelegate.AddOnHome Mo;
         public ChiTietSanPham_1()
         {
             InitializeComponent();
          //   Load();
         }
-        public ChiTietSanPham_1(SanPham sanPham,MoSanPham_form Mo)
+        public ChiTietSanPham_1(SanPham sanPham, HoTro.TatCaDelegate.AddOnHome Mo)
         {
             InitializeComponent();
             this.sanPham = sanPham;
             this.Mo = Mo;
             Loaded();
         }
+
+     
         private void Loaded() {
             pbAnh.Image = Image.FromFile(sanPham.DuongDanHinhAnh);
             lbTen.Text = sanPham.TenSP;
@@ -46,7 +48,7 @@ namespace BaiTapLon.GiaoDien.MuaBan
             Click_Panel(this, EventArgs.Empty);
         }
         private void Click_Panel(object sender, EventArgs e) {
-            this.Mo( new SanPham_Form(sanPham));
+            this.Mo(MuaBan_Form.SANPHAM_FORM, new SanPham_Form(sanPham));
         }
 
 

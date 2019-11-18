@@ -11,8 +11,9 @@ namespace BaiTapLon.KetNoi
     {
         public TaiKhoan getTaiKhoan(string maTaiKhoan) {
             TaiKhoan taiKhoan = null;
-            string ma = maTaiKhoan.Split('K')[1];
-            string query = "select * from TAIKHOAN where MATAIKHOAN = " + ma;
+            if(maTaiKhoan.Contains('K'))
+            maTaiKhoan = maTaiKhoan.Split('K')[1];
+            string query = "select * from TAIKHOAN where MATAIKHOAN = " + maTaiKhoan;
             DataTable dtbale = DocCSDL(query);
             if (dtbale == null || dtbale.Rows.Count == 0) return null;
             foreach (DataRow row in dtbale.Rows)

@@ -8,10 +8,16 @@ using System.Text;
 using BaiTapLon.GiaoDien.Dialog;
 using System.Windows.Forms;
 using BaiTapLon.Model;
+using BaiTapLon.HoTro;
+
 namespace BaiTapLon.GiaoDien.MuaBan
 {
     public partial class SanPham_Form : UserControl
     {
+
+        HoTro.TatCaDelegate.BackHome back;
+
+
         private SanPham sanPham;
         const string S1 = "Img/icon/Star.png";
         const string S2 = "Img/icon/Star_2.png";
@@ -34,6 +40,7 @@ namespace BaiTapLon.GiaoDien.MuaBan
         }
 
         public SanPham SanPham { get => sanPham; set => sanPham = value; }
+        public TatCaDelegate.BackHome Back { get => back; set => back = value; }
 
         public void HienThiThongTin()
         {
@@ -210,13 +217,63 @@ namespace BaiTapLon.GiaoDien.MuaBan
             cbbComment_Sao.SelectedIndex = 0;
             cbbComment_ThoiGian.SelectedIndex = 0;
         }
+
+        // dang binh luan
         private void button12_Click(object sender, EventArgs e)
         {
             new GiaoDien.Dialog.DangBinhLuan(dangBinhLuan,TaiKhoan).ShowDialog();
         }
+
+        //di chuyen tren cac nut tag
+        private void Tag_Hover(object sender, EventArgs e)
+        {
+            Label lb = sender as Label;
+            lb.ForeColor = Color.Red;
+           
+        }
+
+        // thoat khoi cac nut tag
+        private void Tag_Leave(object sender, EventArgs e)
+        {
+            Label lb = sender as Label;
+            lb.ForeColor = Color.White;
+        }
+
+       
+        //click vao label HOme
+        private void BackHome_Click(object sender, EventArgs e)
+        {
+            back(GIAO_DIEN_QUAN_LY.BUON_BAN);
+        }
         #endregion
 
+        //
+        //NUT GIMA SO LUONG SAN PHAM
+        //
+        private void btnSUBSP_Click(object sender, EventArgs e)
+        {
+            int X = Int32.Parse( txtSLSP.Text);
+            if (X-1 <= 0) return;
+            txtSLSP.Text=(X - 1).ToString();
+        }
 
+        //
+        //  NUT THEM SO LUONG SAN PHAM
+        //
+        private void btnAddSP_Click(object sender, EventArgs e)
+        {
+            int X = Int32.Parse(txtSLSP.Text);
+            if (X +1 >100) return;
+            txtSLSP.Text = (X + 1).ToString();
+        }
+
+
+
+        //Them Vao Gio Hang
+        private void button3_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Sản phẩm đã được thêm vào giỏ hàng");
+        }
         //===============HAM XU LY ===============\\
         #region XU LY
         private void dangBinhLuan(BinhLuan binhLuan) {
@@ -227,6 +284,12 @@ namespace BaiTapLon.GiaoDien.MuaBan
         {
             new ChiTietSanPham_2(sanPham).ShowDialog();
         }
+
+
+
+
         #endregion
+
+
     }
 }
