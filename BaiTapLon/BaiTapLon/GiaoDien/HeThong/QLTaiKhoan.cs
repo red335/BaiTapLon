@@ -42,7 +42,7 @@ namespace BaiTapLon.GiaoDien.HeThong
                 gbCTKH.Visible = false;
                 mode = 1;
             }
-            if (mode == 0) { 
+            else { 
                 kh = new KhachHangDAO().getTKKH(TaiKhoan.MaTK);
                 lsMua = new GioHangDAO().lsMua("8");
             }
@@ -67,6 +67,7 @@ namespace BaiTapLon.GiaoDien.HeThong
                 btnSelt.Enabled = false;
                 btnTotal.Enabled = false;
             }
+            UpdateHienThi(0);
         } 
 
         #region Su Kien
@@ -91,28 +92,41 @@ namespace BaiTapLon.GiaoDien.HeThong
 
         #endregion
 
-
-        private void UpdateHienThi(int mode ) {
+        private void ChinhSua(bool t) {
+            txtNL.Enabled = txtTenTK.Enabled = txtEmail.Enabled = t;
+            if (mode == 0) {
+                txtSDTKhach.Enabled = txtDiaChiKhach.Enabled = txtNamSinh.Enabled = t;
+            }
+        }
+        private void UpdateHienThi(int m) {
             //Thong tin
-            if (mode == 1)
+            if (m == 0)
             {
-                gbCTKH.Visible = gbGTKhach.Visible = true;
-                gbDMK.Visible = gbDMK.Visible = false;
+                gbCTKH.Visible = gbTK.Visible = true;
+                gbLS.Visible = gbDMK.Visible = false;
                 btnHUY.Visible = btnOK.Visible = false;
+            }
+            //CHINH SUA
+            else if (m == 1) {
+                gbCTKH.Visible = gbTK.Visible = true;
+                gbLS.Visible = gbDMK.Visible = false;
+                btnHUY.Visible = btnOK.Visible = true;
             }
             // Doi mat khau
-            else if (mode == 2)
+            else if (m == 2)
             {
-                gbDMK.Visible = btnHuyXacNhan.Visible = btnXNhan.Visible = true;
-                gbCTKH.Visible = gbDMK.Visible = gbLS.Visible = false;
-                btnHUY.Visible = btnOK.Visible = false;
+                gbDMK.Visible =  true;
+                gbCTKH.Visible = gbLS.Visible = gbTK.Visible = false;
+               
             }
             // LICH SU
-            else if (mode == 3) {
+            else if (m == 3)
+            {
                 gbLS.Visible = btnHUY.Visible = true;
-                gbCTKH.Visible = gbDMK.Visible = gbDMK.Visible = false; 
-                btnOK.Visible = btnHuyXacNhan.Visible = btnXNhan.Visible = true;
+                gbCTKH.Visible = gbDMK.Visible = gbTK.Visible = false;
+                btnOK.Visible = btnHuyXacNhan.Visible = btnXNhan.Visible = false;
             }
+            mode = m;
         }
         
         #region Chinh Sua
@@ -120,20 +134,22 @@ namespace BaiTapLon.GiaoDien.HeThong
         // CHINH SUA
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (menu == 0) return;
-            UpdateHienThi(true);           
+            if (menu != 0) return;
+            UpdateHienThi(1);
+            ChinhSua(true);           
         }
 
         private void btnHUY_Click(object sender, EventArgs e)
         {
-            UpdateHienThi(false);
-            menu = 0;
+            UpdateHienThi(0);
+            ChinhSua(false);
+            
         }
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            UpdateHienThi(false);
-            menu = 0;
+            UpdateHienThi(0);
+            ChinhSua(false);
         }
         #endregion
 
@@ -143,23 +159,19 @@ namespace BaiTapLon.GiaoDien.HeThong
         private void btnChangePassword_Click(object sender, EventArgs e)
         {
             if (menu != 0) return;
-            gbCTKH.Visible = gbGTKhach.Visible = false;
-            gbDMK.Visible = true;
-            menu = 1;
+            UpdateHienThi(2);            
         }
 
         private void btnXNhan_Click(object sender, EventArgs e)
         {
-            menu = 0;
-            UpdateHienThi(true);
-            gbDMK.Visible = false;
+            UpdateHienThi(0);
+            ChinhSua(false);
         }
 
         private void btnHuyXacNhan_Click(object sender, EventArgs e)
-        {
-            menu = 0;
-            UpdateHienThi(true);
-            gbDMK.Visible = false;
+        {         
+            UpdateHienThi(0);
+            ChinhSua(false);
         }
         #endregion
 
@@ -167,7 +179,8 @@ namespace BaiTapLon.GiaoDien.HeThong
         private void btnSelt_Click(object sender, EventArgs e)
         {
             if (mode != 0) return;
-            gbLS.Visible = true;
+            UpdateHienThi(3);
+
         }
 
 

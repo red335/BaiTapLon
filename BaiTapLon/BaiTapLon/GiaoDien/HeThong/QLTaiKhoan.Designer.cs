@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QLTaiKhoan));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gbTK = new System.Windows.Forms.GroupBox();
             this.txtNL = new System.Windows.Forms.MaskedTextBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -88,7 +88,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.gbLS = new System.Windows.Forms.GroupBox();
             this.flLSMua = new System.Windows.Forms.FlowLayoutPanel();
-            this.groupBox1.SuspendLayout();
+            this.gbTK.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.gbCTKH.SuspendLayout();
@@ -97,26 +97,26 @@
             this.gbLS.SuspendLayout();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // gbTK
             // 
-            this.groupBox1.Controls.Add(this.txtNL);
-            this.groupBox1.Controls.Add(this.panel3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.txtEmail);
-            this.groupBox1.Controls.Add(this.panel2);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.txtTenTK);
-            this.groupBox1.Controls.Add(this.panel1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.btnAvatar);
-            this.groupBox1.Controls.Add(this.pbAvatar);
-            this.groupBox1.Font = new System.Drawing.Font("Arial", 9.7F);
-            this.groupBox1.Location = new System.Drawing.Point(243, 30);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(526, 226);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông Tin Tài Khoản";
+            this.gbTK.Controls.Add(this.txtNL);
+            this.gbTK.Controls.Add(this.panel3);
+            this.gbTK.Controls.Add(this.label2);
+            this.gbTK.Controls.Add(this.txtEmail);
+            this.gbTK.Controls.Add(this.panel2);
+            this.gbTK.Controls.Add(this.label4);
+            this.gbTK.Controls.Add(this.txtTenTK);
+            this.gbTK.Controls.Add(this.panel1);
+            this.gbTK.Controls.Add(this.label1);
+            this.gbTK.Controls.Add(this.btnAvatar);
+            this.gbTK.Controls.Add(this.pbAvatar);
+            this.gbTK.Font = new System.Drawing.Font("Arial", 9.7F);
+            this.gbTK.Location = new System.Drawing.Point(243, 30);
+            this.gbTK.Name = "gbTK";
+            this.gbTK.Size = new System.Drawing.Size(526, 226);
+            this.gbTK.TabIndex = 0;
+            this.gbTK.TabStop = false;
+            this.gbTK.Text = "Thông Tin Tài Khoản";
             // 
             // txtNL
             // 
@@ -779,10 +779,12 @@
             // flLSMua
             // 
             this.flLSMua.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
-            this.flLSMua.Location = new System.Drawing.Point(1, 22);
+            this.flLSMua.Location = new System.Drawing.Point(1, 26);
             this.flLSMua.Name = "flLSMua";
             this.flLSMua.Size = new System.Drawing.Size(637, 416);
             this.flLSMua.TabIndex = 0;
+            this.flLSMua.Visible = false;
+            this.flLSMua.WrapContents = false;
             // 
             // QLTaiKhoan
             // 
@@ -796,12 +798,12 @@
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.gbCTKH);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.gbTK);
             this.MinimumSize = new System.Drawing.Size(1047, 600);
             this.Name = "QLTaiKhoan";
-            this.Size = new System.Drawing.Size(1047, 600);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Size = new System.Drawing.Size(1471, 600);
+            this.gbTK.ResumeLayout(false);
+            this.gbTK.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAvatar)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.gbCTKH.ResumeLayout(false);
@@ -817,7 +819,7 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbTK;
         private System.Windows.Forms.PictureBox pbAvatar;
         private System.Windows.Forms.Button btnAvatar;
         private System.Windows.Forms.Label label1;

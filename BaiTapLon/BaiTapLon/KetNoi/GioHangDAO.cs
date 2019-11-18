@@ -30,7 +30,7 @@ namespace BaiTapLon.KetNoi
             if (maTK.Contains('K'))
                 maTK = maTK.Split('K')[1];
             List<DonHang> ls = new List<DonHang>();
-            string query = "select MA_SANPHAM ,NGAYMUA ,SOLUONG  from LICHSUMUA Where MATAIKHOAN = " + maTK +" and THANHTOAN_XONG = 1";
+            string query = "select MA_SANPHAM ,NGAYMUA ,SOLUONG  from LICHSUMUA Where MATAIKHOAN = " + maTK;
             DataTable table = DocCSDL(query);
             SanPhamDAO sanPhamDAO = new SanPhamDAO();
             if (table == null || table.Rows.Count == 0) return null;
