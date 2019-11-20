@@ -29,5 +29,33 @@ namespace BaiTapLon.KetNoi
             }
             return taiKhoan;
         }
+
+
+
+        //Toan-Login
+        public bool Login(string userName, string passWord)
+        {
+            string query = "dbo.USP_Login @userName = N'" + userName + "', @passWord = N'" + passWord + "'";
+
+            DataTable result = DocCSDL(query);
+
+            return result.Rows.Count > 0;
+        }
+
+        //Ma-Hoa
+        //private string MaHoa(string matKhau)
+        //{
+        //    byte[] temp = ASCIIEncoding.ASCII.GetBytes(matKhau);
+        //    byte[] hasData = new MD5CryptoServiceProvider().ComputeHash(temp);
+
+        //    string hasPass = "";
+
+        //    foreach (byte item in hasData)
+        //    {
+        //        hasPass += item;
+        //    }
+
+        //    return hasPass;
+        //}
     }
 }

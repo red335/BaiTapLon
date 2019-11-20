@@ -94,6 +94,12 @@
     <Compile Include="GiaoDien\HeThong\QLTaiKhoan.Designer.cs">
       <DependentUpon>QLTaiKhoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="GiaoDien\Login\fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GiaoDien\Login\fLogin.designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="GiaoDien\MuaBan\ChiTietSanPham_1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -193,6 +199,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\HeThong\QLTaiKhoan.resx">
       <DependentUpon>QLTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GiaoDien\Login\fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GiaoDien\MuaBan\ChiTietSanPham_1.resx">
       <DependentUpon>ChiTietSanPham_1.cs</DependentUpon>

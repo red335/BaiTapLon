@@ -86,5 +86,12 @@ namespace BaiTapLon
             }
         }
         #endregion
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //Login
+            FLogin f = new FLogin();
+            f.ShowDialog();
+        }
     }
 }
